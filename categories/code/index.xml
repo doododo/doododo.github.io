@@ -1,19 +1,21 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Code on 智慧与哲学</title>
-    <link>https://example.com/categories/code/</link>
-    <description>Recent content in Code on 智慧与哲学</description>
+    <title>编程 on 智慧与哲学</title>
+    <link>https://doododo.github.io/categories/code/</link>
+    <description>Recent content in 编程 on 智慧与哲学</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Sat, 09 Mar 2019 00:00:00 +0000</lastBuildDate><atom:link href="https://example.com/categories/code/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 07 Dec 2019 00:00:00 +0000</lastBuildDate><atom:link href="https://doododo.github.io/categories/code/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Placeholder Text</title>
-      <link>https://example.com/p/placeholder-text/</link>
-      <pubDate>Sat, 09 Mar 2019 00:00:00 +0000</pubDate>
+      <title>Tencent AI OCR</title>
+      <link>https://doododo.github.io/p/composer-tencent-ai-ocr/</link>
+      <pubDate>Sat, 07 Dec 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://example.com/p/placeholder-text/</guid>
-      <description>&lt;p&gt;Lorem est tota propiore conpellat pectoribus de pectora summo.&lt;/p&gt;</description>
+      <guid>https://doododo.github.io/p/composer-tencent-ai-ocr/</guid>
+      <description>支持  身份证识别 行驶证/驾驶证识别 通用识别 营业执照识别 银行卡识别 手写体识别 车牌识别 名片识别  环境需求  PHP &amp;gt; 7.1 composer  安装 composer require doododev/ocr 使用  注册 腾讯 AI 控制台 后，可得到APP_ID 及 APP_KEY
+ 基本使用 $image 参数支持
+ 文件路径（绝对路径） SplFileInfo 对象 在线图片地址  $ocr = new \BigFace\OCR\OCR([ &amp;#39;app_id&amp;#39; =&amp;gt; &amp;#39;xxxx&amp;#39;, &amp;#39;app_key&amp;#39; =&amp;gt; &amp;#39;xxxx&amp;#39; ]); $ocr-&amp;gt;idCard($image); // 注意绝对路径或URL Laravel 使用 # 1. 创建 `ocr.php` 文件  return [ &amp;#39;app_id&amp;#39; =&amp;gt; &amp;#39;xxxx&amp;#39;, &amp;#39;app_key&amp;#39; =&amp;gt; &amp;#39;xxxx&amp;#39; ]; # 2.</description>
     </item>
     
   </channel>
