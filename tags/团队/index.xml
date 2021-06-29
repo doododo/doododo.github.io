@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>团队 on 智慧与哲学</title>
-    <link>https://doododo.github.io/tags/%E5%9B%A2%E9%98%9F/</link>
+    <link>https://doodo.cn/tags/%E5%9B%A2%E9%98%9F/</link>
     <description>Recent content in 团队 on 智慧与哲学</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Mon, 15 Jul 2019 00:00:00 +0000</lastBuildDate><atom:link href="https://doododo.github.io/tags/%E5%9B%A2%E9%98%9F/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 15 Jul 2019 00:00:00 +0000</lastBuildDate><atom:link href="https://doodo.cn/tags/%E5%9B%A2%E9%98%9F/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>领导力之工程师做管理（二）</title>
-      <link>https://doododo.github.io/p/coder-to-manger-2/</link>
+      <link>https://doodo.cn/p/coder-to-manger-2/</link>
       <pubDate>Mon, 15 Jul 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://doododo.github.io/p/coder-to-manger-2/</guid>
+      <guid>https://doodo.cn/p/coder-to-manger-2/</guid>
       <description>工程师转型的方向   技术类
   架构师：侧重于广，着眼于技术的整体性、架构性和业务解决方案
   科学家：侧重于专，着眼于某个专项技术的深度、专业度和精细度
@@ -30,10 +30,10 @@
     
     <item>
       <title>领导力之OKR</title>
-      <link>https://doododo.github.io/p/okr/</link>
+      <link>https://doodo.cn/p/okr/</link>
       <pubDate>Sun, 07 Jul 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://doododo.github.io/p/okr/</guid>
+      <guid>https://doodo.cn/p/okr/</guid>
       <description>OKR落地的先决条件  面对沟通时，是否公开透明，公开场合下表达自己的观点 面对压力时，勇于挑战 面对交付时，信守承诺而不是互相推诿责任   因此，建立公开、公平、信守承诺和勇于挑战的团队文化是落地 OKR 的先决条件
  OKR 制定技巧     核心原则 注意事项     O 1. 有实际价值2. 能激励人心3. 短期可实现 1. 尽量以动词形式开头2. 用通俗易懂的语言表达3. 最好能附上一句为什么   KR 1. 对目标支撑2. 用数据说话3. 具备挑战性 1. 需要通过努力才可能完成2. 不是日常工作或行动计划3. 必须具备良好的实操性    OKR和KPI区别    区别 OKR KPI     关注对象 关注人、关注目标 关注事、关注结果   核心原理 目标对齐 目标分解   用户行为 主动挑战 被动执行   实操过程 员工定制 领导下达   利益相关 无关 相关    KPI是工业时代的产物，OKR是互联网时代的产物。 推算型工作更适合用 KPI，探索型工作更适合用 OKR。 OKR 关注的是结果和过程，更关注过程，而 KPI 关注的只是结果，两者只有有效的结合实现 1+1&amp;gt;2。</description>
     </item>
