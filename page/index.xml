@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>Pages on 智慧与哲学</title>
+        <link>https://github.com/doododo/doododo.github.io.git/page/</link>
+        <description>Recent content in Pages on 智慧与哲学</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>zh-cn</language>
+        <lastBuildDate>Tue, 28 May 2019 00:00:00 +0000</lastBuildDate><atom:link href="https://github.com/doododo/doododo.github.io.git/page/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>Archives</title>
+        <link>https://github.com/doododo/doododo.github.io.git/archives/</link>
+        <pubDate>Tue, 28 May 2019 00:00:00 +0000</pubDate>
+        
+        <guid>https://github.com/doododo/doododo.github.io.git/archives/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>About Me</title>
+        <link>https://github.com/doododo/doododo.github.io.git/about-me/</link>
+        <pubDate>Mon, 01 Feb 2010 00:00:00 +0000</pubDate>
+        
+        <guid>https://github.com/doododo/doododo.github.io.git/about-me/</guid>
+        <description>&lt;blockquote&gt;
+&lt;p&gt;以前，和朋友聊天，他们问我的价值观，我总是含糊其辞，说这个东西很抽象。2018-2019年，陆续看完《王阳明大传》、《王阳明哲学》和《知行合一|王阳明》后，我说：『凡事遵从自己的内心』。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;貌似，又是一个抽象的回答。最近读《论语》，引用孔子对子夏说过的一段话来解释下我的价值观。有一天，子夏问孝于孔子，子曰：『色难。有事，弟子服其劳；有酒食，先生馔，曾是以为孝乎？』我理解这句话的意思是：『侍奉父母，最不容易的就是脸色/内心，因为用饮食、劳务来侍奉父母不算难事，难的是无论做什么事都能和颜悦色的对待父母』。『色难』这个词很妙，做事情的时候不以为然、不情愿，无论有没有表现到脸上，但是违背自己的内心就是『色难』。工作上色难容易导致工作质量不好，低效；生活上色难很容易导致各种抱怨，家庭矛盾。所以，遵从自己的内心，才能体验到快乐。&lt;/p&gt;
+</description>
+        </item>
+        <item>
+        <title>Search</title>
+        <link>https://github.com/doododo/doododo.github.io.git/search/</link>
+        <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+        
+        <guid>https://github.com/doododo/doododo.github.io.git/search/</guid>
+        <description></description>
+        </item>
+        
+    </channel>
+</rss>

@@ -1,0 +1,1166 @@
+<!DOCTYPE html>
+<html lang="zh-cn" dir="ltr">
+    <head><meta charset='utf-8'>
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content='闲来无事，封装 Tencent AI OCR 组件。'>
+<title>Tencent AI OCR</title>
+
+<link rel='canonical' href='https://github.com/doododo/doododo.github.io.git/p/composer-tencent-ai-ocr/'>
+
+<link rel="stylesheet" href="/doododo/doododo.github.io.git/scss/style.min.60d59fc5866170c16b6dfc79276d9f9666ffc30c86802395367f73f246c6211b.css"><meta property='og:title' content='Tencent AI OCR'>
+<meta property='og:description' content='闲来无事，封装 Tencent AI OCR 组件。'>
+<meta property='og:url' content='https://github.com/doododo/doododo.github.io.git/p/composer-tencent-ai-ocr/'>
+<meta property='og:site_name' content='智慧与哲学'>
+<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='OCR' /><meta property='article:tag' content='Composer' /><meta property='article:published_time' content='2019-12-07T00:00:00&#43;00:00'/><meta property='article:modified_time' content='2019-12-07T00:00:00&#43;00:00'/>
+<meta name="twitter:title" content="Tencent AI OCR">
+<meta name="twitter:description" content="闲来无事，封装 Tencent AI OCR 组件。">
+    <link rel="shortcut icon" href="/favicon.ico" />
+
+    </head>
+    <body class="
+    article-page
+    ">
+    <script>
+        (function() {
+            const colorSchemeKey = 'StackColorScheme';
+            if(!localStorage.getItem(colorSchemeKey)){
+                localStorage.setItem(colorSchemeKey, "auto");
+            }
+        })();
+    </script><script>
+    (function() {
+        const colorSchemeKey = 'StackColorScheme';
+        const colorSchemeItem = localStorage.getItem(colorSchemeKey);
+        const supportDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches === true;
+
+        if (colorSchemeItem == 'dark' || colorSchemeItem === 'auto' && supportDarkMode) {
+            
+
+            document.documentElement.dataset.scheme = 'dark';
+        } else {
+            document.documentElement.dataset.scheme = 'light';
+        }
+    })();
+</script>
+<div class="container main-container flex on-phone--column compact"><aside class="sidebar left-sidebar sticky ">
+    <button class="hamburger hamburger--spin" type="button" id="toggle-menu" aria-label="切换菜单">
+        <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+        </span>
+    </button>
+
+    <header>
+        
+            
+            <figure class="site-avatar">
+                <a href="/doododo/doododo.github.io.git">
+                
+                    
+                    
+                    
+                        
+                        <img src="/doododo/doododo.github.io.git/img/avatar_huf8064a1b7505131f9489a77ea77d0422_68951_300x0_resize_box_3.png" width="300"
+                            height="401" class="site-logo" loading="lazy" alt="Avatar">
+                    
+                
+                </a>
+                
+                    <span class="emoji">🪐</span>
+                
+            </figure>
+            
+        
+        
+        <div class="site-meta">
+            <h1 class="site-name"><a href="/doododo/doododo.github.io.git">智慧与哲学</a></h1>
+            <h2 class="site-description">When you look into the abyss, the abyss also looks into you.</h2>
+        </div>
+    </header><ol class="menu" id="main-menu">
+        
+        
+        
+
+        <li >
+            <a href='/doododo/doododo.github.io.git/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-home" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <polyline points="5 12 3 12 12 3 21 12 19 12" />
+  <path d="M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-7" />
+  <path d="M9 21v-6a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v6" />
+</svg>
+
+
+
+                
+                <span>首页</span>
+            </a>
+        </li>
+        
+        
+
+        <li >
+            <a href='/doododo/doododo.github.io.git/archives/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-archive" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <rect x="3" y="4" width="18" height="4" rx="2" />
+  <path d="M5 8v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-10" />
+  <line x1="10" y1="12" x2="14" y2="12" />
+</svg>
+
+
+
+                
+                <span>归档</span>
+            </a>
+        </li>
+        
+        
+
+        <li >
+            <a href='/doododo/doododo.github.io.git/about-me/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-user" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="7" r="4" />
+  <path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" />
+</svg>
+
+
+
+                
+                <span>关于</span>
+            </a>
+        </li>
+        
+        
+
+        <li >
+            <a href='/doododo/doododo.github.io.git/search/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-search" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="10" cy="10" r="7" />
+  <line x1="21" y1="21" x2="15" y2="15" />
+</svg>
+
+
+
+                
+                <span>搜索</span>
+            </a>
+        </li>
+        
+
+        <div class="menu-bottom-section">
+            
+            
+                <li id="dark-mode-toggle">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-left" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="8" cy="12" r="2" />
+  <rect x="2" y="6" width="20" height="12" rx="6" />
+</svg>
+
+
+
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-right" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="16" cy="12" r="2" />
+  <rect x="2" y="6" width="20" height="12" rx="6" />
+</svg>
+
+
+
+                    <span>暗色模式</span>
+                </li>
+            
+        </div>
+    </ol>
+</aside>
+
+    
+
+            <main class="main full-width">
+    <article class="main-article">
+    <header class="article-header">
+
+    <div class="article-details">
+    
+    <header class="article-category">
+        
+            <a href="/doododo/doododo.github.io.git/categories/code/" style="background-color: #2a9d8f; color: #fff;">
+                编程
+            </a>
+        
+    </header>
+    
+
+    <div class="article-title-wrapper">
+        <h2 class="article-title">
+            <a href="/doododo/doododo.github.io.git/p/composer-tencent-ai-ocr/">Tencent AI OCR</a>
+        </h2>
+    
+        
+        <h3 class="article-subtitle">
+            闲来无事，封装 Tencent AI OCR 组件。
+        </h3>
+        
+    </div>
+
+    
+    
+    
+    
+    <footer class="article-time">
+        
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-calendar-time" width="56" height="56" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <path d="M11.795 21h-6.795a2 2 0 0 1 -2 -2v-12a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v4" />
+  <circle cx="18" cy="18" r="4" />
+  <path d="M15 3v4" />
+  <path d="M7 3v4" />
+  <path d="M3 11h16" />
+  <path d="M18 16.496v1.504l1 1" />
+</svg>
+                <time class="article-time--published">Dec 07, 2019</time>
+            </div>
+        
+
+        
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <polyline points="12 7 12 12 15 15" />
+</svg>
+
+
+
+                <time class="article-time--reading">
+                    阅读时长: 4 分钟
+                </time>
+            </div>
+        
+    </footer>
+    
+
+    
+</div>
+
+</header>
+
+    <section class="article-content">
+    
+    
+    <h2 id="支持">支持</h2>
+<ul>
+<li><a class="link" href="#id-card" >身份证识别</a></li>
+<li><a class="link" href="#driver-license" >行驶证/驾驶证识别</a></li>
+<li><a class="link" href="#generic" >通用识别</a></li>
+<li><a class="link" href="#business-license" >营业执照识别</a></li>
+<li><a class="link" href="#credit-card" >银行卡识别</a></li>
+<li><a class="link" href="#handwrite" >手写体识别</a></li>
+<li><a class="link" href="#plate-license" >车牌识别</a></li>
+<li><a class="link" href="#business-card" >名片识别</a></li>
+</ul>
+<h2 id="环境需求">环境需求</h2>
+<ul>
+<li>PHP &gt; 7.1</li>
+<li><a class="link" href="https://getcomposer.org/"  target="_blank" rel="noopener"
+    >composer</a></li>
+</ul>
+<h2 id="安装">安装</h2>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">composer require doododev/ocr
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h2 id="使用">使用</h2>
+<blockquote>
+<p>注册 <a class="link" href="https://ai.qq.com"  target="_blank" rel="noopener"
+    >腾讯 AI 控制台</a> 后，可得到<a class="link" href="https://ai.qq.com/console/home"  target="_blank" rel="noopener"
+    >APP_ID 及 APP_KEY</a></p>
+</blockquote>
+<h3 id="基本使用">基本使用</h3>
+<p><strong>$image 参数支持</strong></p>
+<ul>
+<li>文件路径（绝对路径）</li>
+<li><code>SplFileInfo</code> 对象</li>
+<li>在线图片地址</li>
+</ul>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-php" data-lang="php"><span class="line"><span class="cl"><span class="nv">$ocr</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">\BigFace\OCR\OCR</span><span class="p">([</span>
+</span></span><span class="line"><span class="cl">    <span class="s1">&#39;app_id&#39;</span> <span class="o">=&gt;</span> <span class="s1">&#39;xxxx&#39;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="s1">&#39;app_key&#39;</span> <span class="o">=&gt;</span> <span class="s1">&#39;xxxx&#39;</span>
+</span></span><span class="line"><span class="cl"><span class="p">]);</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="nv">$ocr</span><span class="o">-&gt;</span><span class="na">idCard</span><span class="p">(</span><span class="nv">$image</span><span class="p">);</span> <span class="c1">// 注意绝对路径或URL
+</span></span></span></code></pre></td></tr></table>
+</div>
+</div><h3 id="laravel-使用">Laravel 使用</h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-php" data-lang="php"><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># 1. 创建 `ocr.php` 文件
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>
+</span></span><span class="line"><span class="cl"><span class="k">return</span> <span class="p">[</span>
+</span></span><span class="line"><span class="cl">    <span class="s1">&#39;app_id&#39;</span> <span class="o">=&gt;</span> <span class="s1">&#39;xxxx&#39;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="s1">&#39;app_key&#39;</span> <span class="o">=&gt;</span> <span class="s1">&#39;xxxx&#39;</span>
+</span></span><span class="line"><span class="cl"><span class="p">];</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># 2. 修改 `AppServiceProvider.php` 的 `boot()` 添加
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="k">use</span> <span class="nx">BigFace\OCR\OCR</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="nv">$this</span><span class="o">-&gt;</span><span class="na">app</span><span class="o">-&gt;</span><span class="na">singleton</span><span class="p">(</span><span class="nx">OCR</span><span class="o">::</span><span class="na">class</span><span class="p">,</span> <span class="k">function</span> <span class="p">()</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="k">new</span> <span class="nx">OCR</span><span class="p">(</span><span class="nx">config</span><span class="p">(</span><span class="s1">&#39;ocr&#39;</span><span class="p">));</span>
+</span></span><span class="line"><span class="cl"><span class="p">});</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="nv">$this</span><span class="o">-&gt;</span><span class="na">app</span><span class="o">-&gt;</span><span class="na">alias</span><span class="p">(</span><span class="nx">OCR</span><span class="o">::</span><span class="na">class</span><span class="p">,</span> <span class="s1">&#39;ocr&#39;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># 3. 使用
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="nv">$ocr</span> <span class="o">=</span> <span class="nx">app</span><span class="p">(</span><span class="s1">&#39;ocr&#39;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="nv">$ocr</span><span class="o">-&gt;</span><span class="na">idCard</span><span class="p">(</span><span class="nv">$image</span><span class="p">);</span> <span class="c1">// 注意绝对路径或URL
+</span></span></span></code></pre></td></tr></table>
+</div>
+</div><h2 id="文档">文档</h2>
+<h3 id="身份证识别">身份证识别</h3>
+<p><!-- raw HTML omitted --><!-- raw HTML omitted --></p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-php" data-lang="php"><span class="line"><span class="cl"><span class="c1">// 身份证正面
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="nv">$ocr</span><span class="o">-&gt;</span><span class="na">idCard</span><span class="p">(</span><span class="nv">$image</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="c1">// 身份证反面
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="nv">$ocr</span><span class="o">-&gt;</span><span class="na">idCard</span><span class="p">(</span><span class="nv">$image</span><span class="p">,</span> <span class="mi">1</span><span class="p">);</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>返回值（Array）</p>
+<div class="table-wrapper"><table>
+<thead>
+<tr>
+<th>参数名称</th>
+<th>描述</th>
+<th>备注</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>name</td>
+<td>姓名</td>
+<td></td>
+</tr>
+<tr>
+<td>sex</td>
+<td>性别</td>
+<td></td>
+</tr>
+<tr>
+<td>nation</td>
+<td>民族</td>
+<td></td>
+</tr>
+<tr>
+<td>birth</td>
+<td>出生日期</td>
+<td></td>
+</tr>
+<tr>
+<td>address</td>
+<td>住址</td>
+<td></td>
+</tr>
+<tr>
+<td>id</td>
+<td>身份证号码</td>
+<td></td>
+</tr>
+<tr>
+<td>authority</td>
+<td>发证机关</td>
+<td></td>
+</tr>
+<tr>
+<td>valid_date</td>
+<td>身份证有效期</td>
+<td></td>
+</tr>
+</tbody>
+</table></div>
+<p>eg.</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-json" data-lang="json"><span class="line"><span class="cl"><span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">&#34;name&#34;</span><span class="p">:</span> <span class="s2">&#34;艾米&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">&#34;sex&#34;</span><span class="p">:</span> <span class="s2">&#34;女&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">&#34;nation&#34;</span><span class="p">:</span> <span class="s2">&#34;汉&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">&#34;birth&#34;</span><span class="p">:</span> <span class="s2">&#34;1986/4/23&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">&#34;address&#34;</span><span class="p">:</span> <span class="s2">&#34;上海徐汇区田林路397号腾云大厦6F&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">&#34;id&#34;</span><span class="p">:</span> <span class="s2">&#34;310104198604230289&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">&#34;authority&#34;</span><span class="p">:</span> <span class="s2">&#34;&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">&#34;valid_date&#34;</span><span class="p">:</span> <span class="s2">&#34;&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h3 id="行驶证驾驶证识别">行驶证/驾驶证识别</h3>
+<p><!-- raw HTML omitted --><!-- raw HTML omitted --></p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-php" data-lang="php"><span class="line"><span class="cl"><span class="c1">// 行驶证
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="nv">$ocr</span><span class="o">-&gt;</span><span class="na">driverLicense</span><span class="p">(</span><span class="nv">$image</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="c1">// 驾驶证
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="nv">$ocr</span><span class="o">-&gt;</span><span class="na">driverLicense</span><span class="p">(</span><span class="nv">$image</span><span class="p">,</span> <span class="mi">1</span><span class="p">);</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>行驶证返回值（Array）</p>
+<div class="table-wrapper"><table>
+<thead>
+<tr>
+<th>参数名称</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>plate_no</td>
+<td>车牌号码</td>
+</tr>
+<tr>
+<td>owner</td>
+<td>所有人</td>
+</tr>
+<tr>
+<td>address</td>
+<td>住址</td>
+</tr>
+<tr>
+<td>use_character</td>
+<td>使用性质</td>
+</tr>
+<tr>
+<td>model</td>
+<td>品牌型号</td>
+</tr>
+<tr>
+<td>vin</td>
+<td>识别代码</td>
+</tr>
+<tr>
+<td>engine_no</td>
+<td>发动机号</td>
+</tr>
+<tr>
+<td>register_date</td>
+<td>注册日期</td>
+</tr>
+<tr>
+<td>issue_date</td>
+<td>发证日期</td>
+</tr>
+<tr>
+<td>stamp</td>
+<td>红章</td>
+</tr>
+</tbody>
+</table></div>
+<p>eg.</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-json" data-lang="json"><span class="line"><span class="cl"><span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">&#34;plate_no&#34;</span><span class="p">:</span> <span class="s2">&#34;沪AA1234&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">&#34;owner&#34;</span><span class="p">:</span> <span class="s2">&#34;李明&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">&#34;address&#34;</span><span class="p">:</span> <span class="s2">&#34;上海市徐汇区田林路397号腾云大厦6F&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">&#34;use_character&#34;</span><span class="p">:</span> <span class="s2">&#34;非营运&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">&#34;model&#34;</span><span class="p">:</span> <span class="s2">&#34;大众汽车牌G4SVW71612RS&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">&#34;vin&#34;</span><span class="p">:</span> <span class="s2">&#34;ABCDEFGH123456789&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">&#34;engine_no&#34;</span><span class="p">:</span> <span class="s2">&#34;8B54321&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">&#34;register_date&#34;</span><span class="p">:</span> <span class="s2">&#34;2011-10-10&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">&#34;issue_date&#34;</span><span class="p">:</span> <span class="s2">&#34;2011-10-10&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">&#34;stamp&#34;</span><span class="p">:</span> <span class="s2">&#34;上海市公安局交通警察总队&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>驾照返回值（Array）</p>
+<div class="table-wrapper"><table>
+<thead>
+<tr>
+<th>参数名称</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>driver_no</td>
+<td>证号</td>
+</tr>
+<tr>
+<td>name</td>
+<td>姓名</td>
+</tr>
+<tr>
+<td>sex</td>
+<td>性别</td>
+</tr>
+<tr>
+<td>nationality</td>
+<td>国籍</td>
+</tr>
+<tr>
+<td>address</td>
+<td>住址</td>
+</tr>
+<tr>
+<td>brithday</td>
+<td>出生日期</td>
+</tr>
+<tr>
+<td>issue_date</td>
+<td>领证日期</td>
+</tr>
+<tr>
+<td>class</td>
+<td>准驾车型</td>
+</tr>
+<tr>
+<td>start_date</td>
+<td>起始日期</td>
+</tr>
+<tr>
+<td>end_date</td>
+<td>有效日期</td>
+</tr>
+<tr>
+<td>stamp</td>
+<td>红章</td>
+</tr>
+</tbody>
+</table></div>
+<p>eg.</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-json" data-lang="json"><span class="line"><span class="cl"><span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">&#34;driver_no&#34;</span><span class="p">:</span> <span class="s2">&#34;610333199012213125&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">&#34;name&#34;</span><span class="p">:</span> <span class="s2">&#34;艾米&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">&#34;sex&#34;</span><span class="p">:</span> <span class="s2">&#34;女&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">&#34;nationality&#34;</span><span class="p">:</span> <span class="s2">&#34;中国&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">&#34;address&#34;</span><span class="p">:</span> <span class="s2">&#34;深圳市南山区高新科技园科技中一路腾讯大厦&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">&#34;brithday&#34;</span><span class="p">:</span> <span class="s2">&#34;1990-12-21&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">&#34;issue_date&#34;</span><span class="p">:</span> <span class="s2">&#34;2015-01-01&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">&#34;class&#34;</span><span class="p">:</span> <span class="s2">&#34;C1&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">&#34;start_date&#34;</span><span class="p">:</span> <span class="s2">&#34;2015-01-01&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">&#34;end_date&#34;</span><span class="p">:</span> <span class="s2">&#34;2021-01-01&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">&#34;stamp&#34;</span><span class="p">:</span> <span class="s2">&#34;广东省深圳市公安局交通警察支队&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h3 id="通用识别">通用识别</h3>
+<p><!-- raw HTML omitted --><!-- raw HTML omitted --></p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-php" data-lang="php"><span class="line"><span class="cl"><span class="nv">$ocr</span><span class="o">-&gt;</span><span class="na">generic</span><span class="p">(</span><span class="s1">&#39;https://cdn.ai.qq.com/aiplat/static/ai-demo/large/o-1.jpg&#39;</span><span class="p">);</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>返回值（Array）</p>
+<p>eg.</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span><span class="lnt">8
+</span><span class="lnt">9
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-json" data-lang="json"><span class="line"><span class="cl"><span class="p">[</span>
+</span></span><span class="line"><span class="cl">    <span class="s2">&#34;夏天的飞鸟，飞到我窗前唱歌，又飞去了。&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="s2">&#34;秋天的黄叶，它们没有什么可唱，只叹息一声，飞落在那里。&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="s2">&#34;Stray birds of summer come to my window to sing and fly away.&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="s2">&#34;And yellow leaves of autumn, which have no songs, futter and fall there with a sign.&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="s2">&#34;飞鸟集&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="s2">&#34;STRAY&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="s2">&#34;BIRDS&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="p">]</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h3 id="营业执照识别">营业执照识别</h3>
+<p><!-- raw HTML omitted --><!-- raw HTML omitted --></p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-php" data-lang="php"><span class="line"><span class="cl"><span class="nv">$ocr</span><span class="o">-&gt;</span><span class="na">businessLicense</span><span class="p">(</span><span class="s1">&#39;https://cdn.ai.qq.com/aiplat/static/ai-demo/large/odemo-pic-5.jpg&#39;</span><span class="p">);</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>返回值（Array）</p>
+<div class="table-wrapper"><table>
+<thead>
+<tr>
+<th>参数名称</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>card_no</td>
+<td>注册号</td>
+</tr>
+<tr>
+<td>card_type</td>
+<td>法定代表人</td>
+</tr>
+<tr>
+<td>card_name</td>
+<td>公司名称</td>
+</tr>
+<tr>
+<td>bank</td>
+<td>地址</td>
+</tr>
+<tr>
+<td>card_time</td>
+<td>营业期限</td>
+</tr>
+</tbody>
+</table></div>
+<p>eg.</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-json" data-lang="json"><span class="line"><span class="cl"><span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">&#34;business_license&#34;</span><span class="p">:</span> <span class="s2">&#34;91440300708461136T&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">&#34;legal_person&#34;</span><span class="p">:</span> <span class="s2">&#34;马化腾&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">&#34;company_code&#34;</span><span class="p">:</span> <span class="s2">&#34;深圳市腾讯计算机系统有限公司&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">&#34;company_address&#34;</span><span class="p">:</span> <span class="s2">&#34;深圳市南山区深南大道10000号&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">&#34;business_time&#34;</span><span class="p">:</span> <span class="s2">&#34;1998年11月11日至长期&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h3 id="银行卡识别">银行卡识别</h3>
+<p><!-- raw HTML omitted --><!-- raw HTML omitted --></p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-php" data-lang="php"><span class="line"><span class="cl"><span class="nv">$ocr</span><span class="o">-&gt;</span><span class="na">businessLicense</span><span class="p">(</span><span class="s1">&#39;https://cdn.ai.qq.com/aiplat/static/ai-demo/large/odemo-pic-5.jpg&#39;</span><span class="p">);</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>返回值（Array）</p>
+<div class="table-wrapper"><table>
+<thead>
+<tr>
+<th>参数名称</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>card_no</td>
+<td>卡号</td>
+</tr>
+<tr>
+<td>card_type</td>
+<td>卡类型</td>
+</tr>
+<tr>
+<td>card_name</td>
+<td>卡名字</td>
+</tr>
+<tr>
+<td>bank</td>
+<td>银行信息</td>
+</tr>
+<tr>
+<td>card_time</td>
+<td>有效期</td>
+</tr>
+</tbody>
+</table></div>
+<p>eg.</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-json" data-lang="json"><span class="line"><span class="cl"><span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">&#34;card_no&#34;</span><span class="p">:</span> <span class="s2">&#34;6225760088888888&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">&#34;card_type&#34;</span><span class="p">:</span> <span class="s2">&#34;贷记卡&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">&#34;card_name&#34;</span><span class="p">:</span> <span class="s2">&#34;招商银行信用卡&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">&#34;bank&#34;</span><span class="p">:</span> <span class="s2">&#34;招商银行(03080000)&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">&#34;card_time&#34;</span><span class="p">:</span> <span class="s2">&#34;08/2022&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h3 id="手写体识别">手写体识别</h3>
+<p><!-- raw HTML omitted --><!-- raw HTML omitted --></p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-php" data-lang="php"><span class="line"><span class="cl"><span class="nv">$ocr</span><span class="o">-&gt;</span><span class="na">handwrite</span><span class="p">(</span><span class="s1">&#39;https://cdn.ai.qq.com/ai/assets/ai-demo/large/hd-5-lg.jpg&#39;</span><span class="p">);</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>返回值（Array）</p>
+<p>eg.</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span><span class="lnt">8
+</span><span class="lnt">9
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-json" data-lang="json"><span class="line"><span class="cl"><span class="p">[</span>
+</span></span><span class="line"><span class="cl">    <span class="s2">&#34;这个忧伤而明&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="s2">&#34;媚的三月，从我单&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="s2">&#34;薄的青春里打马&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="s2">&#34;而过，穿过紫堇穿&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="s2">&#34;过木棉。穿过时&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="s2">&#34;隐时现的悲喜和&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="s2">&#34;无常&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="p">]</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h3 id="车牌识别">车牌识别</h3>
+<p><!-- raw HTML omitted --><!-- raw HTML omitted --></p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-php" data-lang="php"><span class="line"><span class="cl"><span class="nv">$ocr</span><span class="o">-&gt;</span><span class="na">plateLicense</span><span class="p">(</span><span class="s1">&#39;https://cdn.ai.qq.com/ai/assets/ai-demo/large/plate-1-lg.jpg&#39;</span><span class="p">)</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>返回值（Array）</p>
+<div class="table-wrapper"><table>
+<thead>
+<tr>
+<th>参数名称</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>plate_no</td>
+<td>车牌号</td>
+</tr>
+</tbody>
+</table></div>
+<p>eg.</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-json" data-lang="json"><span class="line"><span class="cl"><span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">&#34;plate_no&#34;</span><span class="p">:</span> <span class="s2">&#34;京N0L9U8&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h3 id="名片识别">名片识别</h3>
+<p><!-- raw HTML omitted --><!-- raw HTML omitted --></p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-php" data-lang="php"><span class="line"><span class="cl"><span class="nv">$ocr</span><span class="o">-&gt;</span><span class="na">businessCard</span><span class="p">(</span><span class="s1">&#39;https://cdn.ai.qq.com/aiplat/static/ai-demo/large/odemo-pic-2.jpg&#39;</span><span class="p">);</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>返回值（Array）</p>
+<div class="table-wrapper"><table>
+<thead>
+<tr>
+<th>参数名称</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>name</td>
+<td>姓名</td>
+</tr>
+<tr>
+<td>position</td>
+<td>职位</td>
+</tr>
+<tr>
+<td>company</td>
+<td>公司</td>
+</tr>
+<tr>
+<td>address</td>
+<td>地址</td>
+</tr>
+<tr>
+<td>email</td>
+<td>邮箱</td>
+</tr>
+<tr>
+<td>mobile</td>
+<td>手机</td>
+</tr>
+<tr>
+<td>wechat</td>
+<td>微信</td>
+</tr>
+</tbody>
+</table></div>
+<p>eg.</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span><span class="lnt">8
+</span><span class="lnt">9
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-json" data-lang="json"><span class="line"><span class="cl"><span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">&#34;name&#34;</span><span class="p">:</span> <span class="s2">&#34;李明&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">&#34;position&#34;</span><span class="p">:</span> <span class="s2">&#34;产品经理&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">&#34;company&#34;</span><span class="p">:</span> <span class="s2">&#34;Tencent腾讯&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">&#34;address&#34;</span><span class="p">:</span> <span class="s2">&#34;深圳市南山区深南大道10000号腾讯大厦&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">&#34;email&#34;</span><span class="p">:</span> <span class="s2">&#34;8888asss@tencent.com&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">&#34;mobile&#34;</span><span class="p">:</span> <span class="s2">&#34;13888882222&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">&#34;wechat&#34;</span><span class="p">:</span> <span class="s2">&#34;limig&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>MIT</p>
+
+</section>
+
+
+    <footer class="article-footer">
+    
+    <section class="article-tags">
+        
+            <a href="/doododo/doododo.github.io.git/tags/ocr/">OCR</a>
+        
+            <a href="/doododo/doododo.github.io.git/tags/composer/">Composer</a>
+        
+    </section>
+
+
+    
+    <section class="article-copyright">
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-copyright" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <path d="M14.5 9a3.5 4 0 1 0 0 6" />
+</svg>
+
+
+
+        <span>Licensed under CC BY-NC-SA 4.0</span>
+    </section>
+    </footer>
+
+
+    
+</article>
+
+    
+
+    
+
+<aside class="related-content--wrapper">
+    <h2 class="section-title">相关文章</h2>
+    <div class="related-content">
+        <div class="flex article-list--tile">
+            
+                
+<article class="">
+    <a href="/doododo/doododo.github.io.git/p/golang-01/">
+        
+        
+
+        <div class="article-details">
+            <h2 class="article-title">Golang-01-基础</h2>
+        </div>
+    </a>
+</article>
+
+            
+        </div>
+    </div>
+</aside>
+
+     
+    
+        
+    <link rel="stylesheet" href="https://unpkg.com/vssue/dist/vssue.min.css" />
+
+<div id="vssue"></div>
+
+<script src="https://unpkg.com/vue@2/dist/vue.runtime.min.js"></script>
+<script src="https://unpkg.com/vssue/dist/vssue.github.min.js"></script>
+
+<script>
+    new Vue({
+        el: "#vssue",
+        render: (h) =>
+            h("Vssue", {
+                props: {
+                    title: "Tencent AI OCR",
+                    options: {
+                        autoCreateIssue:  false ,
+                        owner: "doododo",
+                        repo: "blog-comments",
+                        clientId: "c263615c777d0794c0fc",
+                        clientSecret: "b643152f291314eb79f82548941be58eb95035e0",
+                    },
+                },
+            }),
+    });
+</script>
+
+    
+
+    <footer class="site-footer">
+    <section class="copyright">
+        &copy; 
+        
+            2016 - 
+        
+        2023 智慧与哲学
+    </section>
+    
+    <section class="powerby">
+        
+            doodo <br/>
+        Built with <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> <br />
+        主题 <b><a href="https://github.com/CaiJimmy/hugo-theme-stack" target="_blank" rel="noopener" data-version="3.16.0">Stack</a></b> 由 <a href="https://jimmycai.com" target="_blank" rel="noopener">Jimmy</a> 设计
+    </section>
+</footer>
+
+
+    
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    
+    <div class="pswp__bg"></div>
+
+    
+    <div class="pswp__scroll-wrap">
+
+        
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        
+        <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar">
+
+                
+
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                
+                
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                        <div class="pswp__preloader__cut">
+                            <div class="pswp__preloader__donut"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div>
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.js"integrity="sha256-ePwmChbbvXbsO02lbM3HoHbSHTHFAeChekF1xKJdleo="crossorigin="anonymous"
+                defer
+                >
+            </script><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe-ui-default.min.js"integrity="sha256-UKkzOn/w1mBxRmLLGrSeyB4e1xbrp4xylgAWb3M42pU="crossorigin="anonymous"
+                defer
+                >
+            </script><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/default-skin/default-skin.min.css"crossorigin="anonymous"
+            ><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.css"crossorigin="anonymous"
+            >
+
+            </main>
+        </div>
+        <script 
+                src="https://cdn.jsdelivr.net/npm/node-vibrant@3.1.6/dist/vibrant.min.js"integrity="sha256-awcR2jno4kI5X0zL8ex0vi2z&#43;KMkF24hUW8WePSA9HM="crossorigin="anonymous"
+                
+                >
+            </script><script type="text/javascript" src="/doododo/doododo.github.io.git/ts/main.js" defer></script>
+<script>
+    (function () {
+        const customFont = document.createElement('link');
+        customFont.href = "https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap";
+
+        customFont.type = "text/css";
+        customFont.rel = "stylesheet";
+
+        document.head.appendChild(customFont);
+    }());
+</script>
+
+    </body>
+</html>

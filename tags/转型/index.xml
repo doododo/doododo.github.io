@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>转型 on 智慧与哲学</title>
+        <link>https://github.com/doododo/doododo.github.io.git/tags/%E8%BD%AC%E5%9E%8B/</link>
+        <description>Recent content in 转型 on 智慧与哲学</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>zh-cn</language>
+        <lastBuildDate>Sun, 14 Jul 2019 00:00:00 +0000</lastBuildDate><atom:link href="https://github.com/doododo/doododo.github.io.git/tags/%E8%BD%AC%E5%9E%8B/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>领导力之工程师做管理（一）</title>
+        <link>https://github.com/doododo/doododo.github.io.git/p/coder-to-manger-1/</link>
+        <pubDate>Sun, 14 Jul 2019 00:00:00 +0000</pubDate>
+        
+        <guid>https://github.com/doododo/doododo.github.io.git/p/coder-to-manger-1/</guid>
+        <description>&lt;p&gt;技术出身的管理者，转型初期，大多数人聚焦到自身和自己的能力上，这会导致一个很大的问题。工作上遇到稍微难一点的事情就喜欢亲自上阵，甚至所有代码都要自己写了才放心。&lt;/p&gt;
+&lt;p&gt;从某种程度上，这其实是对团队成员的不信任。一开始团队小，这种方式还行的通，最多是自己累点，而且，慢慢的团队成员越来越依赖我，自己还会产生优越感。一定要要改变自己的潜意识“这件事儿很复杂，交给别人做没有自己处理来的高效、快、稳妥”。其实，这就是在用静态思维看待动态发展的问题。慢慢放手后，别人可以做比自己更好，只要给他机会、资源、支持和帮助。&lt;/p&gt;
+&lt;p&gt;兼容并包的领导方式。多样化的员工才会创造多样化的企业文化，才能保持组织的创新能力。只有人才的多样化和领导的包容性并存，团队才会越来越好，越来越有活力，保持创新能力。&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;一个技术管理者的成功并不在于自己代码多好、能力多强，他的成功一定是建立在团队的成功之上。只有团队成员不断成长，这个团队才可以做成更大的事情，而你才能看的更远。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;团队-bug-如何应对&#34;&gt;团队 bug 如何应对&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;bug追究责任，但不惩罚&lt;/li&gt;
+&lt;li&gt;改善制度、流程避免同样错误&lt;/li&gt;
+&lt;li&gt;显示出来的bug可能只是冰山一角，要反复问为什么，从根本找到值得改进的问题&lt;/li&gt;
+&lt;li&gt;建立员工信任关系，不安全感可能是自己不够自信，害怕犯错，也可能是对他人漠不关心，或是对其代码质量有怀疑&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;ab测试中应注意哪些问题&#34;&gt;A/B测试中应注意哪些问题&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;永远不要过分相信你的直觉&lt;/li&gt;
+&lt;li&gt;实验样本的数量和分配要全面、合理&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;技术管理者的工作&#34;&gt;技术管理者的工作&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;帮助团队成员成长、实现进阶&lt;/li&gt;
+&lt;li&gt;明确需求边界、制定计划、选拔人员、工作授权&lt;/li&gt;
+&lt;li&gt;与团队成员建立有效的合作关系&lt;/li&gt;
+&lt;li&gt;为团队成员提出更具有参考价值，以及建设性的职业规划建议&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;反面领导的思维模式&#34;&gt;（反面）领导的思维模式&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;用固定的眼光看待你的能力，很长时间都觉得你的能力水平在这个级别上，只能做这个级别的事，而不去考虑你尚未被挖掘的潜力和创新能力&lt;/li&gt;
+&lt;li&gt;看重独立作战的能力，而忽略了你协调作战等软技能&lt;/li&gt;
+&lt;li&gt;过于关注你的错误，而不是主动通过这个错误来帮助你成长&lt;/li&gt;
+&lt;li&gt;认为团队目标比每个人的成长更重要&lt;/li&gt;
+&lt;li&gt;给你的反馈回偏评价或判断，而不是帮助你提升&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;反面领导的行为&#34;&gt;（反面）领导的行为&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;这个问题很棘手，我觉得他肯定处理不好。（你让他尝试过吗？）&lt;/li&gt;
+&lt;li&gt;这个任务需要对需求比较了解，所有只有 A 能做。（别人不能学，不能通过请教别人去了解吗？）&lt;/li&gt;
+&lt;li&gt;上次他就搞砸了，这种事他肯定做不了。（只有一次失败还是多次？一次失败的机会还是应该给的。）&lt;/li&gt;
+&lt;li&gt;我们必须严格按照期限完成这个项目，目前看来 A 做最合适。（如果还有别人，虽然不如 A，但这样的挑战对他来说是一次很好的锻炼机会，那是不是可以考虑呢？）&lt;/li&gt;
+&lt;li&gt;你今年参与的三个项目都失败了。（这种反馈，远不如指出对方可以改进的内容。）&lt;/li&gt;
+&lt;li&gt;经常工作以外的时间发工作邮件。这样很容易形成鼓励加班的错觉，长期这样会给那些工作时间以外享受生活的人带来很大的压力。其实，加不加班都是员工自己的选择，最好的工作氛围应该是相对自由的&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;如何晋升一名团队成员&#34;&gt;如何晋升一名团队成员&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;每个级别都设定一些标准&lt;/li&gt;
+&lt;li&gt;过去的半年或者一年里，按照下一个级别的标准去工作&lt;/li&gt;
+&lt;li&gt;评估的标准不仅仅是你多么努力，更多的是你的项目成果，以及你在项目中表现出来的能力&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;参考.&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;标准&lt;/th&gt;
+&lt;th&gt;评分&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;技术水平&lt;/td&gt;
+&lt;td&gt;3&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;执行能力&lt;/td&gt;
+&lt;td&gt;2&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;完成项目后的成果&lt;/td&gt;
+&lt;td&gt;3&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;独立解决困难&lt;/td&gt;
+&lt;td&gt;1&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;对别人成长做出贡献&lt;/td&gt;
+&lt;td&gt;1&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h2 id=&#34;管理者的思考&#34;&gt;管理者的思考&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;怎么能让员工晋升到更高的层次&lt;/li&gt;
+&lt;li&gt;他的潜力在哪，哪些地方可以培养和挖掘&lt;/li&gt;
+&lt;li&gt;怎样帮助员工改进同事关系，让他有更好的机会发挥长处&lt;/li&gt;
+&lt;li&gt;怎样今早的发现他的错误或者缺点，并帮助他认识和改进，而不是在错误变成后果，再去追究责任&lt;/li&gt;
+&lt;li&gt;怎样帮助他在不擅长的领域建立信心&lt;/li&gt;
+&lt;li&gt;怎样帮助他学会处理各种压力和矛盾&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;一对一的沟通&#34;&gt;一对一的沟通&lt;/h2&gt;
+&lt;p&gt;团队管理者应该定期与员工进行一对一沟通，也就是说，每两周会有一次到两次的一对一面谈，每次谈话大约二三十分钟。谈话的内容没有定式。一般会谈到最近项目的进展、工作中的挑战、技术、业务、人事关系，大家甚至可以针对一个技术细节进行详细探讨和沟通。除此之外，还可以讨论一些不成熟的想法，精彩的创意，倾诉工作或生活中的焦虑，甚至抱怨。无论是工作中的、生活中，还是情绪上的问题，都可以通过一对一的沟通进行缓解，甚至直接解决。&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;你每周在团队成员上花费的三十分钟，可能会提升他接下来一周甚至两周的工作品质。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;关于项目延期&#34;&gt;关于项目延期&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;建立一定的流程。包括计划制定流程和计划跟进流程，也许是每周一次的同步会议，也许是一个共享的任务管理工具&lt;/li&gt;
+&lt;li&gt;明确整个项目计划中的优先级&lt;/li&gt;
+&lt;li&gt;制作一个共享的项目状态表，让团队成员可以一眼就看清楚项目进展，并保持该图表的更新。&lt;/li&gt;
+&lt;li&gt;不要漏掉任何一个人。当项目计划落实后，第一时间让所有相关人了解到，临时沟通会让合作者或者帮忙的人没有参与感，并且很容易因为对方没有提前准备在时间上无法达成一致&lt;/li&gt;
+&lt;li&gt;提供有效的反馈渠道。任何人在任何时候对项目有担心或疑虑，确保他可以通过有效的途径让你第一时间知道他的担心&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;管理者与被管理者期望值差异&#34;&gt;管理者与被管理者期望值差异&lt;/h2&gt;
+&lt;h2 id=&#34;关于工作分配&#34;&gt;关于工作分配&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;建立初步的参看基线，用来评估他是否是完成当前任务的最佳人选&lt;/li&gt;
+&lt;li&gt;充分沟通，看他的问题和想法是否会尽可能的考虑所有情况，看他是不是真正了解任务的状况，有没有综合去考虑任务中的问题&lt;/li&gt;
+&lt;li&gt;工期估算。如果一个人不能花费足够的时间去了解自己未知的部分，我们很难放心地把任务交给他独立完成&lt;/li&gt;
+&lt;li&gt;执行力。如果他的沟通能力，计划能力都很强，但执行力比较差，执行过程中容易遇到问题退缩，很难按期完成任务，或者跟自己的初期规划有很大出入，甚至代码有很多bug，这种难以托付大事&lt;/li&gt;
+&lt;li&gt;后期维护。可以自觉的维护产品，有责任感，不推卸责任，出了问题能第一时间冲到一线解决。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;开发者如何建立个人影响力&#34;&gt;开发者如何建立个人影响力&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;存在感：你的意见别人会认真听取&lt;/li&gt;
+&lt;li&gt;说服力：意见不同时，能有效让对方真的明白你的出发点，虽然不一定100%采纳，但会认可你的观点&lt;/li&gt;
+&lt;li&gt;谈判力：共同完成一个项目，职责划分尽可能公平，对双方都有利&lt;/li&gt;
+&lt;li&gt;协调力：多方合作的时候，能起到桥梁作用，促进多方更好地沟通&lt;/li&gt;
+&lt;li&gt;鼓舞力：灌鸡汤、打鸡血的能力。“振臂一呼，应者云集”&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;激励团队成员责任心&#34;&gt;激励团队成员责任心&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;明确责任制，尽可能的通过规则来明确和规范与责任心、责任感相关的事情&lt;/li&gt;
+&lt;li&gt;让责任制变得有效，而不是形同虚设。每个人真正对自己的那块业务负责起来。有效的责任制是明确所有人的责任和权利，而不是最后追究责任或推卸责任&lt;/li&gt;
+&lt;li&gt;尽可能的让团队成员充满归属感，进而激发他们的责任心。仅靠丰厚的薪酬和舒适的工作环境是不够的，需要有远大的目标和坚定的信念，才能让这些优秀的人与公司一起往前走&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;team-leader-转为-技术管理者&#34;&gt;Team Leader 转为 技术管理者&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;不要任何事情都亲力亲为，要充分授权和任务分配&lt;/li&gt;
+&lt;li&gt;不要让自己成为团队的瓶颈，自己一旦停下来，就成了所有人的瓶颈&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        </item>
+        
+    </channel>
+</rss>

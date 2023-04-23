@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>团队 on 智慧与哲学</title>
+        <link>https://github.com/doododo/doododo.github.io.git/tags/%E5%9B%A2%E9%98%9F/</link>
+        <description>Recent content in 团队 on 智慧与哲学</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>zh-cn</language>
+        <lastBuildDate>Mon, 15 Jul 2019 00:00:00 +0000</lastBuildDate><atom:link href="https://github.com/doododo/doododo.github.io.git/tags/%E5%9B%A2%E9%98%9F/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>领导力之工程师做管理（二）</title>
+        <link>https://github.com/doododo/doododo.github.io.git/p/coder-to-manger-2/</link>
+        <pubDate>Mon, 15 Jul 2019 00:00:00 +0000</pubDate>
+        
+        <guid>https://github.com/doododo/doododo.github.io.git/p/coder-to-manger-2/</guid>
+        <description>&lt;h2 id=&#34;工程师转型的方向&#34;&gt;工程师转型的方向&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;技术类&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;架构师：侧重于&lt;em&gt;广&lt;/em&gt;，着眼于技术的整体性、架构性和业务解决方案&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;科学家：侧重于&lt;em&gt;专&lt;/em&gt;，着眼于某个专项技术的深度、专业度和精细度&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;管理类&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;技术管理者：从工程师到技术团队的一线经理，再慢慢做到部门经理等二线经理，然后是某个大技术体系或整个技术部的技术副总裁，如果还包括产品、设计等所有产品交付类团队，就成为常规意义上的 CTO&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;职业经理人：不限于管理技术类团队，往往负责一个完成的业务。往往根据公司需求去负责其他完整新业务，工作内容迁移性比较强，主要关心业务经营的方方面面。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;创业类&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;创始人：牵头创业&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;技术合伙人：全面负责公司的技术，以技术管理为公司安邦定国&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;顾问类&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;投资人：基于对一个创业团队和项目的完整判断，从外围以资本运作等服务支持创业公司&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;管理顾问：提供培训、咨询服务，偏人力发展和团队建设，往往以多年的管理经验、管理理论、技术教练和培训经验为依托&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        </item>
+        <item>
+        <title>领导力之OKR</title>
+        <link>https://github.com/doododo/doododo.github.io.git/p/okr/</link>
+        <pubDate>Sun, 07 Jul 2019 00:00:00 +0000</pubDate>
+        
+        <guid>https://github.com/doododo/doododo.github.io.git/p/okr/</guid>
+        <description>&lt;h2 id=&#34;okr落地的先决条件&#34;&gt;OKR落地的先决条件&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;面对沟通时，是否公开透明，公开场合下表达自己的观点&lt;/li&gt;
+&lt;li&gt;面对压力时，勇于挑战&lt;/li&gt;
+&lt;li&gt;面对交付时，信守承诺而不是互相推诿责任&lt;/li&gt;
+&lt;/ul&gt;
+&lt;blockquote&gt;
+&lt;p&gt;因此，建立公开、公平、信守承诺和勇于挑战的团队文化是落地 OKR 的先决条件&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;okr-制定技巧&#34;&gt;OKR 制定技巧&lt;/h2&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;&lt;/th&gt;
+&lt;th&gt;核心原则&lt;/th&gt;
+&lt;th&gt;注意事项&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;O&lt;/td&gt;
+&lt;td&gt;1. 有实际价值&lt;!-- raw HTML omitted --&gt; 2. 能激励人心&lt;!-- raw HTML omitted --&gt; 3. 短期可实现&lt;!-- raw HTML omitted --&gt;&lt;/td&gt;
+&lt;td&gt;1. 尽量以动词形式开头&lt;!-- raw HTML omitted --&gt; 2. 用通俗易懂的语言表达&lt;!-- raw HTML omitted --&gt; 3. 最好能附上一句为什么&lt;!-- raw HTML omitted --&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;KR&lt;/td&gt;
+&lt;td&gt;1. 对目标支撑&lt;!-- raw HTML omitted --&gt; 2. 用数据说话&lt;!-- raw HTML omitted --&gt; 3. 具备挑战性&lt;!-- raw HTML omitted --&gt;&lt;/td&gt;
+&lt;td&gt;1. 需要通过努力才可能完成&lt;!-- raw HTML omitted --&gt; 2. 不是日常工作或行动计划&lt;!-- raw HTML omitted --&gt; 3. 必须具备良好的实操性&lt;!-- raw HTML omitted --&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h2 id=&#34;okr和kpi区别&#34;&gt;OKR和KPI区别&lt;/h2&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;区别&lt;/th&gt;
+&lt;th&gt;OKR&lt;/th&gt;
+&lt;th&gt;KPI&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;关注对象&lt;/td&gt;
+&lt;td&gt;关注人、关注目标&lt;/td&gt;
+&lt;td&gt;关注事、关注结果&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;核心原理&lt;/td&gt;
+&lt;td&gt;目标对齐&lt;/td&gt;
+&lt;td&gt;目标分解&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;用户行为&lt;/td&gt;
+&lt;td&gt;主动挑战&lt;/td&gt;
+&lt;td&gt;被动执行&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;实操过程&lt;/td&gt;
+&lt;td&gt;员工定制&lt;/td&gt;
+&lt;td&gt;领导下达&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;利益相关&lt;/td&gt;
+&lt;td&gt;无关&lt;/td&gt;
+&lt;td&gt;相关&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;KPI是工业时代的产物，OKR是互联网时代的产物。
+推算型工作更适合用 KPI，探索型工作更适合用 OKR。
+OKR 关注的是结果和过程，更关注过程，而 KPI 关注的只是结果，两者只有有效的结合实现 &lt;code&gt;1+1&amp;gt;2&lt;/code&gt;。&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;OKR&lt;/th&gt;
+&lt;th&gt;KPI&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;专业技能成长&lt;/td&gt;
+&lt;td&gt;项目上线时间&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;成为全栈工程师&lt;/td&gt;
+&lt;td&gt;线上产品bug数&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;技术分享与内训&lt;/td&gt;
+&lt;td&gt;测试覆盖率&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;偿还技术债&lt;/td&gt;
+&lt;td&gt;API文档&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;业务知识学习&lt;/td&gt;
+&lt;td&gt;代码规范&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;开发效率提升&lt;/td&gt;
+&lt;td&gt;性能安全稳定性&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h2 id=&#34;如何打造团队文化&#34;&gt;如何打造团队文化&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;先管好自己&lt;/li&gt;
+&lt;li&gt;加强内部分享，通过沟通和分享给团队更多的空间&lt;/li&gt;
+&lt;li&gt;团队文化由团队说了算，而领导仅是一名教练&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;如何让团队能够在公开场合表达自己真实感受&#34;&gt;如何让团队能够在公开场合表达自己真实感受&lt;/h2&gt;
+&lt;p&gt;小团队更容易些，大团队靠的是队长的领导力，领导是否是否真正关心每人的个人成长。&lt;/p&gt;
+&lt;h2 id=&#34;okr如何开始推广&#34;&gt;OKR如何开始推广&lt;/h2&gt;
+&lt;p&gt;作为领导者，只需要影响自己身边值得被影响的人。优先将 OKR 介绍给团队核心成员，并让他们每个人逐步理解 OKR 的价值，并指导他们正确的使用 OKR。&lt;/p&gt;
+&lt;p&gt;OKR 只对内驱力强的人有价值，再去努力提升他们的领导力，最后让他们影响剩余的80%的人，最终大家顺理成章的用上 OKR。&lt;/p&gt;
+&lt;h2 id=&#34;产品技术部门如何制定-okr&#34;&gt;产品技术部门如何制定 OKR&lt;/h2&gt;
+&lt;p&gt;产品型公司的发展不是依赖销售目标去牵引，而是通过产品技术竞争力去推动。公司从产品原型 - 早期用户发展 - 基本验证 - 产品市场适配 - 增长模式确定 - 规模化成长的全过程中，产品技术负责人可以根据不同阶段的内在逻辑去制定本部门 OKR，从而让自己的团队 OKR 更聚焦。&lt;/p&gt;
+&lt;p&gt;产品型公司初期，技术团队负责人不要试图从企业目标中分解而得出自己部门的 OKR。例如：“获得 X 万用户，实现 Y 万销售业绩，拓展 Z 个渠道”。这样的目标几乎起不到任何聚焦关键问题的作用，也很难让团队为此目标振奋人心。所以，产品型团队的 OKR 目标识别，可以从产品技术的角度出发，心无旁骛的聚焦原动力问题，而不用担心会在营销、销售等职能上缺乏目标指引。&lt;/p&gt;
+&lt;p&gt;产品型公司初期，OKR 应集中到 &lt;code&gt;识别标杆客户&lt;/code&gt;，&lt;code&gt;提升销售转化率&lt;/code&gt;，&lt;code&gt;完善关键产品特性&lt;/code&gt;，&lt;code&gt;消除量产缺陷&lt;/code&gt;，&lt;code&gt;偿还技术债务&lt;/code&gt; 这五个方面。中期 OKR 可以着眼于 &lt;code&gt;打造中后台系统&lt;/code&gt;、&lt;code&gt;提供数据分析能力&lt;/code&gt;，&lt;code&gt;赋能业务团队&lt;/code&gt;，&lt;code&gt;提升运营效率&lt;/code&gt;。&lt;/p&gt;
+</description>
+        </item>
+        
+    </channel>
+</rss>
