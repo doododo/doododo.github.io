@@ -2,16 +2,16 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
         <title>编程 on 智慧与哲学</title>
-        <link>https://github.com/doododo/doododo.github.io.git/tags/%E7%BC%96%E7%A8%8B/</link>
+        <link>https://doododo.github.io/tags/%E7%BC%96%E7%A8%8B/</link>
         <description>Recent content in 编程 on 智慧与哲学</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
-        <lastBuildDate>Tue, 29 Dec 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://github.com/doododo/doododo.github.io.git/tags/%E7%BC%96%E7%A8%8B/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Tue, 29 Dec 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://doododo.github.io/tags/%E7%BC%96%E7%A8%8B/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>Golang-01-基础</title>
-        <link>https://github.com/doododo/doododo.github.io.git/p/golang-01/</link>
+        <link>https://doododo.github.io/p/golang-01/</link>
         <pubDate>Tue, 29 Dec 2020 00:00:00 +0000</pubDate>
         
-        <guid>https://github.com/doododo/doododo.github.io.git/p/golang-01/</guid>
+        <guid>https://doododo.github.io/p/golang-01/</guid>
         <description>&lt;h3 id=&#34;数组赋值问题&#34;&gt;数组赋值问题&lt;/h3&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;

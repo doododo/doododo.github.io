@@ -2,33 +2,33 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
         <title>Categories on 智慧与哲学</title>
-        <link>https://github.com/doododo/doododo.github.io.git/categories/</link>
+        <link>https://doododo.github.io/categories/</link>
         <description>Recent content in Categories on 智慧与哲学</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
-        <lastBuildDate>Tue, 29 Jun 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://github.com/doododo/doododo.github.io.git/categories/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Tue, 29 Jun 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://doododo.github.io/categories/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>思考</title>
-        <link>https://github.com/doododo/doododo.github.io.git/categories/think/</link>
+        <link>https://doododo.github.io/categories/think/</link>
         <pubDate>Tue, 29 Jun 2021 00:00:00 +0000</pubDate>
         
-        <guid>https://github.com/doododo/doododo.github.io.git/categories/think/</guid>
-        <description>&lt;img src="https://github.com/doododo/doododo.github.io.git/categories/think/think.png" alt="Featured image of post 思考" /&gt;</description>
+        <guid>https://doododo.github.io/categories/think/</guid>
+        <description>&lt;img src="https://doododo.github.io/categories/think/think.png" alt="Featured image of post 思考" /&gt;</description>
         </item>
         <item>
         <title>编程</title>
-        <link>https://github.com/doododo/doododo.github.io.git/categories/code/</link>
+        <link>https://doododo.github.io/categories/code/</link>
         <pubDate>Tue, 29 Dec 2020 00:00:00 +0000</pubDate>
         
-        <guid>https://github.com/doododo/doododo.github.io.git/categories/code/</guid>
-        <description>&lt;img src="https://github.com/doododo/doododo.github.io.git/categories/code/code.jpg" alt="Featured image of post 编程" /&gt;</description>
+        <guid>https://doododo.github.io/categories/code/</guid>
+        <description>&lt;img src="https://doododo.github.io/categories/code/code.jpg" alt="Featured image of post 编程" /&gt;</description>
         </item>
         <item>
         <title>读书</title>
-        <link>https://github.com/doododo/doododo.github.io.git/categories/reader/</link>
+        <link>https://doododo.github.io/categories/reader/</link>
         <pubDate>Sat, 22 Feb 2020 00:00:00 +0000</pubDate>
         
-        <guid>https://github.com/doododo/doododo.github.io.git/categories/reader/</guid>
-        <description>&lt;img src="https://github.com/doododo/doododo.github.io.git/categories/reader/reader.png" alt="Featured image of post 读书" /&gt;</description>
+        <guid>https://doododo.github.io/categories/reader/</guid>
+        <description>&lt;img src="https://doododo.github.io/categories/reader/reader.png" alt="Featured image of post 读书" /&gt;</description>
         </item>
         
     </channel>

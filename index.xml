@@ -2,16 +2,16 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
         <title>智慧与哲学</title>
-        <link>https://github.com/doododo/doododo.github.io.git/</link>
+        <link>https://doododo.github.io/</link>
         <description>Recent content on 智慧与哲学</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
-        <lastBuildDate>Tue, 29 Jun 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://github.com/doododo/doododo.github.io.git/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Tue, 29 Jun 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://doododo.github.io/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>乏味——好久没写点东西了</title>
-        <link>https://github.com/doododo/doododo.github.io.git/p/about-chinese-philosophy-1/</link>
+        <link>https://doododo.github.io/p/about-chinese-philosophy-1/</link>
         <pubDate>Tue, 29 Jun 2021 00:00:00 +0000</pubDate>
         
-        <guid>https://github.com/doododo/doododo.github.io.git/p/about-chinese-philosophy-1/</guid>
+        <guid>https://doododo.github.io/p/about-chinese-philosophy-1/</guid>
         <description>&lt;p&gt;最近一段时间工作有点忙，没啥心思。与其说工作忙，其实呢，是自己没有管理好时间。晚上下班路上看看下象棋的场子、和家人聊几句家常、喝杯小酒、刷刷美剧、看点闲书&amp;hellip;。今天晚上突然一切没那么香了，还是写写东西吧。&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;最近对理学的粗浅见解&lt;/p&gt;
@@ -29,10 +29,10 @@
         </item>
         <item>
         <title>和尧尧的交流思考</title>
-        <link>https://github.com/doododo/doododo.github.io.git/p/think-child-yy/</link>
+        <link>https://doododo.github.io/p/think-child-yy/</link>
         <pubDate>Sat, 30 Jan 2021 00:00:00 +0000</pubDate>
         
-        <guid>https://github.com/doododo/doododo.github.io.git/p/think-child-yy/</guid>
+        <guid>https://doododo.github.io/p/think-child-yy/</guid>
         <description>&lt;p&gt;今天下午，孩子围棋网课又没有开摄像头。我媳妇找我，给我说了下这个情况。其实，我也关注这个事好久了，一直想找个机会和尧尧好好聊聊。围棋下课后，我给尧尧开启视频通话。&lt;/p&gt;
 &lt;p&gt;还是那段熟悉的常规对话。我说：『你上围棋课没有开摄像头，为什么呢？』他说：『我不想开，就是不想开』。一直反复这个问题大概7分钟左右。无论我怎么引导他说出他的想法，他一直说：『就是XXX』。然后，我有点发脾气了。后来，他哭了一会儿，我也冷静了下。再到后来，我们又开始沟通起来。他告诉我，自己有很多不会的题。其实，这大半年，他围棋水平几乎没有提高，第一次围棋等级考试他考的挺好，那个时候也很喜欢去上围棋课。慢慢的，原来下不过他的小朋友，后来都超越了他。也是，从那个时候，他慢慢的开始敷衍逃避。&lt;/p&gt;
 &lt;p&gt;这段时间我也一直没找到聊这个事的突破口，今天我们终于把这个话题撕破了。&lt;/p&gt;
@@ -48,10 +48,10 @@
         </item>
         <item>
         <title>Golang-01-基础</title>
-        <link>https://github.com/doododo/doododo.github.io.git/p/golang-01/</link>
+        <link>https://doododo.github.io/p/golang-01/</link>
         <pubDate>Tue, 29 Dec 2020 00:00:00 +0000</pubDate>
         
-        <guid>https://github.com/doododo/doododo.github.io.git/p/golang-01/</guid>
+        <guid>https://doododo.github.io/p/golang-01/</guid>
         <description>&lt;h3 id=&#34;数组赋值问题&#34;&gt;数组赋值问题&lt;/h3&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
@@ -249,10 +249,10 @@
         </item>
         <item>
         <title>是孩子欺骗了我吗</title>
-        <link>https://github.com/doododo/doododo.github.io.git/p/think-deceive/</link>
+        <link>https://doododo.github.io/p/think-deceive/</link>
         <pubDate>Tue, 29 Dec 2020 00:00:00 +0000</pubDate>
         
-        <guid>https://github.com/doododo/doododo.github.io.git/p/think-deceive/</guid>
+        <guid>https://doododo.github.io/p/think-deceive/</guid>
         <description>&lt;p&gt;今天晚上我和心之聊天，其实呢，今天晚上我打算引入的主题是：『北京疫情严重了，我元旦回不去了』。和他简单聊了几句后，他一直在和我打哈哈。然后，我问他最近在忙什么？他貌似没有啥值得和我说的。其实好长一段时间，他都是这样回答，我理解的意思是，他一切都挺好的，没啥值得提的。慢慢的，我对他这种回答已经开始麻木。哪怕他说，最近你总是很少有时间陪我？最近老妈很少有时间来看我？最近我姥爷身体不好？最近我挺想我妹妹的？至少，我感觉这是他一直在思考过这个问题。其实，他可能曾经一直思考过这些问题，但是我从来没有意识到过，然后，慢慢的觉得我们都不在乎这些问题了。&lt;/p&gt;
 &lt;p&gt;慢慢的，我问他今天晚上有没有写阅读打卡，他说写了。我特别伤心，因为我知道他没有写。他一般都是周二开始写，每周有三个晚上写就能完成作业。我说了一些道理，其实，我也明白他不想让父母或者关心他的人知道，因为，他怕这些人伤心或者训他。说实话，我从来没有因为这种事情生气。每个父母都是希望自己的孩子是完美的，可能正是这种完美的错觉导致了互相的欺骗，然后才有了信息差。&lt;/p&gt;
 &lt;p&gt;『我希望你是一个快乐的孩子，应该享受每个孩子应有的快乐与天真。你不要试图去欺骗你关心的人来获得别人的开心，父母不喜欢你为了别人的快乐而做自己不喜欢的事情。我们更希望你能够快乐的活好每一天，遇到事情如果自己解决不了，可以寻求别人的帮助，我们也特别喜欢你主动去找人解决，甚至是抱怨，而不是期望你告诉我们没有任何事情发送。如果真是这样，慢慢的你会有来越来多的包袱，知道你背不动了。今天晚上我没有生气，而是伤心，因为我没有让你值得信任。我们都要反思，以后，我们都不要做类似的事情。你现在表现很好，因为你没有哭泣，我感觉你很内疚，成长就是这样，我们都要做一个有用的人。对了，我要告诉你一个秘密：「你知道我为什么知道你在骗我吗？」。子曰：「君子坦荡荡，小人长戚戚」。我希望你能成为君子，活得潇洒，自己内心不要有遗憾，为自己负责』&lt;/p&gt;
@@ -261,20 +261,20 @@
         </item>
         <item>
         <title>看尧尧下棋的交流思考</title>
-        <link>https://github.com/doododo/doododo.github.io.git/p/talk-yy-go/</link>
+        <link>https://doododo.github.io/p/talk-yy-go/</link>
         <pubDate>Mon, 28 Dec 2020 00:00:00 +0000</pubDate>
         
-        <guid>https://github.com/doododo/doododo.github.io.git/p/talk-yy-go/</guid>
+        <guid>https://doododo.github.io/p/talk-yy-go/</guid>
         <description>&lt;p&gt;这个周末回了趟济南，媳妇最近工作比较忙。周日下午，苗苗睡着了，我一直陪着尧尧下围棋。突然，尧尧问我：『老爸，你真喜欢下围棋吗？是不是因为陪我？』我听到这个问题时，心微微一动。我并没有直接回答他的问题。我说：『你知道吗？老爸虽然棋艺很低，但是，喜欢这个下午陪你下围棋』。&lt;/p&gt;
 &lt;p&gt;真诚的陪孩子并不容易，如果我在旁边一直看手机，都不如不陪他。虽然，我也看不懂他下围棋，但是我最想传递给他的是我的爱和正能量，无论面对什么困难我都想陪他，在一旁给他信心。&lt;/p&gt;
 </description>
         </item>
         <item>
         <title>什么是望子成龙</title>
-        <link>https://github.com/doododo/doododo.github.io.git/p/think-child-expect/</link>
+        <link>https://doododo.github.io/p/think-child-expect/</link>
         <pubDate>Thu, 24 Dec 2020 00:00:00 +0000</pubDate>
         
-        <guid>https://github.com/doododo/doododo.github.io.git/p/think-child-expect/</guid>
+        <guid>https://doododo.github.io/p/think-child-expect/</guid>
         <description>&lt;p&gt;最近这几年，身边的朋友慢慢的成为父亲，即使没有孩子的朋友也成为了像父亲一样的人。因为，他们试图去了解孩子的内心，尝试去了解作为一个父母的内心，因为，这一切正是为了孩子。他们不想让孩子成为20年前的自己。正是因为这样，孩子才变成你『现在的样子』。&lt;/p&gt;
 &lt;p&gt;从幼儿园开始，每一个父母都想过孩子应该学点什么才有用，将来做个社会有用的人。所以，给孩子选择了围棋、美术、足球等业余兴趣爱好。很多父母认为：『我没有替孩子选择，孩子不喜欢足球，我立刻放弃了，最后他选择了乒乓球』。父母内心总是认为自己很仁德，但孩子面临是只是一道选择题。到了小学，父母觉得孩子应该注重文化课了，所以，引导孩子去搞一门英语或者书法。到了中学，父母又引导孩子去选择两门文化课兴趣。难道，这就是『望子成龙』。&lt;/p&gt;
 &lt;p&gt;曾经，我也是这么认为的，但我内心从来没有放弃过追求。最近，包括和我老婆在内的许多父母在内交流，幡然醒悟，原来，错的不是孩子，而是我们。我们总是你以自己的认知去教育、引导孩子。但面临自己的问题时：『你又不了解我的处境，我告诉你有什么用；我不想思考这些问题，我也不想去回味这些发生过的历史』。自己又做不到成长，又何谈对于子女的成长呢？&lt;/p&gt;
@@ -285,10 +285,10 @@
         </item>
         <item>
         <title>为什么你总是XX</title>
-        <link>https://github.com/doododo/doododo.github.io.git/p/why-you-xx/</link>
+        <link>https://doododo.github.io/p/why-you-xx/</link>
         <pubDate>Thu, 10 Dec 2020 00:00:00 +0000</pubDate>
         
-        <guid>https://github.com/doododo/doododo.github.io.git/p/why-you-xx/</guid>
+        <guid>https://doododo.github.io/p/why-you-xx/</guid>
         <description>&lt;h2 id=&#34;为什么你总是后悔&#34;&gt;为什么你总是后悔&lt;/h2&gt;
 &lt;blockquote&gt;
 &lt;p&gt;身边经常有人对我说：『我非常后悔做了XXX』。每次听到这个话题，我都说：『听到这件事，我很难过。给你讲下我的经验吧！』&lt;/p&gt;
@@ -324,10 +324,10 @@
         </item>
         <item>
         <title>可复制的领导力</title>
-        <link>https://github.com/doododo/doododo.github.io.git/p/reproducible-leadership/</link>
+        <link>https://doododo.github.io/p/reproducible-leadership/</link>
         <pubDate>Sat, 22 Feb 2020 00:00:00 +0000</pubDate>
         
-        <guid>https://github.com/doododo/doododo.github.io.git/p/reproducible-leadership/</guid>
+        <guid>https://doododo.github.io/p/reproducible-leadership/</guid>
         <description>&lt;p&gt;这本书很易懂，大概3个小时读完。书中对于某一项细节地方常会推荐其他书。书中把很多长篇理论性思想总结为各种可套用的工具，比如，领导如何交代工作任务、如何制定目标、BIC工具等。&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;爱因斯坦说“持续不断地用同样的方法做同一件事情，却期望得到不同的结果，这就叫荒谬”！只有换方法，让价值观升级，才有可能破局，走上另一条道路。&lt;/p&gt;
@@ -352,10 +352,10 @@
 第5遍，要求员工提出个人见解。&lt;/p&gt;
 &lt;p&gt;经过这样的复杂流程，可以确保员工充分理解做事的目的和方法，减少后续失误的可能，避免徒劳无功，防止“重做”的风险。而重做是企业最大的非必要成本。&lt;/p&gt;
 &lt;h3 id=&#34;提升领导力的四重修炼&#34;&gt;提升领导力的四重修炼&lt;/h3&gt;
-&lt;p&gt;&lt;img src=&#34;https://github.com/doododo/doododo.github.io.git/doododo/doododo.github.io.git/p/reproducible-leadership/1.jpeg&#34;
+&lt;p&gt;&lt;img src=&#34;https://doododo.github.io/p/reproducible-leadership/1.jpeg&#34;
 	width=&#34;1003&#34;
 	height=&#34;229&#34;
-	srcset=&#34;https://github.com/doododo/doododo.github.io.git/doododo/doododo.github.io.git/p/reproducible-leadership/1_hucd052de6afb94158218f50a58303ebbe_77755_480x0_resize_q75_box.jpeg 480w, https://github.com/doododo/doododo.github.io.git/doododo/doododo.github.io.git/p/reproducible-leadership/1_hucd052de6afb94158218f50a58303ebbe_77755_1024x0_resize_q75_box.jpeg 1024w&#34;
+	srcset=&#34;https://doododo.github.io/p/reproducible-leadership/1_hucd052de6afb94158218f50a58303ebbe_77755_480x0_resize_q75_box.jpeg 480w, https://doododo.github.io/p/reproducible-leadership/1_hucd052de6afb94158218f50a58303ebbe_77755_1024x0_resize_q75_box.jpeg 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;Photo by Florian Klauer on Unsplash&#34;
@@ -376,10 +376,10 @@
 &lt;p&gt;老板在员工表现不佳的时候过问甚至质疑，还会给员工造成一种感觉，那就是即便我再努力，也会被老板挑出毛病，还不如等老板将一切安排好后照做就是，这样还省心省力。&lt;/p&gt;
 &lt;p&gt;老板在员工表现不佳的时候过问甚至质疑，还会给员工造成一种感觉，那就是即便我再努力，也会被老板挑出毛病，还不如等老板将一切安排好后照做就是，这样还省心省力。&lt;/p&gt;
 &lt;h3 id=&#34;管理者的三大角色&#34;&gt;管理者的三大角色&lt;/h3&gt;
-&lt;p&gt;&lt;img src=&#34;https://github.com/doododo/doododo.github.io.git/doododo/doododo.github.io.git/p/reproducible-leadership/2.jpeg&#34;
+&lt;p&gt;&lt;img src=&#34;https://doododo.github.io/p/reproducible-leadership/2.jpeg&#34;
 	width=&#34;605&#34;
 	height=&#34;737&#34;
-	srcset=&#34;https://github.com/doododo/doododo.github.io.git/doododo/doododo.github.io.git/p/reproducible-leadership/2_hu4ac22a45be268fed4af0542773be89a3_73929_480x0_resize_q75_box.jpeg 480w, https://github.com/doododo/doododo.github.io.git/doododo/doododo.github.io.git/p/reproducible-leadership/2_hu4ac22a45be268fed4af0542773be89a3_73929_1024x0_resize_q75_box.jpeg 1024w&#34;
+	srcset=&#34;https://doododo.github.io/p/reproducible-leadership/2_hu4ac22a45be268fed4af0542773be89a3_73929_480x0_resize_q75_box.jpeg 480w, https://doododo.github.io/p/reproducible-leadership/2_hu4ac22a45be268fed4af0542773be89a3_73929_1024x0_resize_q75_box.jpeg 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;Photo by Florian Klauer on Unsplash&#34;
@@ -419,10 +419,10 @@
 &lt;li&gt;必须确认这个目标是双方都认可的。&lt;/li&gt;
 &lt;/ol&gt;
 &lt;h3 id=&#34;套用公式制定团队目标&#34;&gt;套用公式制定团队目标&lt;/h3&gt;
-&lt;p&gt;&lt;img src=&#34;https://github.com/doododo/doododo.github.io.git/doododo/doododo.github.io.git/p/reproducible-leadership/3.jpeg&#34;
+&lt;p&gt;&lt;img src=&#34;https://doododo.github.io/p/reproducible-leadership/3.jpeg&#34;
 	width=&#34;1183&#34;
 	height=&#34;290&#34;
-	srcset=&#34;https://github.com/doododo/doododo.github.io.git/doododo/doododo.github.io.git/p/reproducible-leadership/3_hud5ff09893b6869d9334f5ede6bcea0bf_53720_480x0_resize_q75_box.jpeg 480w, https://github.com/doododo/doododo.github.io.git/doododo/doododo.github.io.git/p/reproducible-leadership/3_hud5ff09893b6869d9334f5ede6bcea0bf_53720_1024x0_resize_q75_box.jpeg 1024w&#34;
+	srcset=&#34;https://doododo.github.io/p/reproducible-leadership/3_hud5ff09893b6869d9334f5ede6bcea0bf_53720_480x0_resize_q75_box.jpeg 480w, https://doododo.github.io/p/reproducible-leadership/3_hud5ff09893b6869d9334f5ede6bcea0bf_53720_1024x0_resize_q75_box.jpeg 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;Photo by Florian Klauer on Unsplash&#34;
@@ -444,10 +444,10 @@
 第四步，写下个人特征，便于做到知人善用。个人特征是指个人突出的品质，比如聪明、善于交际、善于思考等。
 第五步，按照执行、管理、领导这三种角色，列出各自要做的事情。&lt;/p&gt;
 &lt;h2 id=&#34;第6章-利用沟通视窗改善人际沟通&#34;&gt;第6章 利用沟通视窗，改善人际沟通&lt;/h2&gt;
-&lt;p&gt;&lt;img src=&#34;https://github.com/doododo/doododo.github.io.git/doododo/doododo.github.io.git/p/reproducible-leadership/4.jpeg&#34;
+&lt;p&gt;&lt;img src=&#34;https://doododo.github.io/p/reproducible-leadership/4.jpeg&#34;
 	width=&#34;1183&#34;
 	height=&#34;290&#34;
-	srcset=&#34;https://github.com/doododo/doododo.github.io.git/doododo/doododo.github.io.git/p/reproducible-leadership/4_hud5ff09893b6869d9334f5ede6bcea0bf_53720_480x0_resize_q75_box.jpeg 480w, https://github.com/doododo/doododo.github.io.git/doododo/doododo.github.io.git/p/reproducible-leadership/4_hud5ff09893b6869d9334f5ede6bcea0bf_53720_1024x0_resize_q75_box.jpeg 1024w&#34;
+	srcset=&#34;https://doododo.github.io/p/reproducible-leadership/4_hud5ff09893b6869d9334f5ede6bcea0bf_53720_480x0_resize_q75_box.jpeg 480w, https://doododo.github.io/p/reproducible-leadership/4_hud5ff09893b6869d9334f5ede6bcea0bf_53720_1024x0_resize_q75_box.jpeg 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;Photo by Florian Klauer on Unsplash&#34;
@@ -480,10 +480,10 @@
 &lt;h2 id=&#34;第7章-学会倾听创建良性的交流通道&#34;&gt;第7章 学会倾听，创建良性的交流通道&lt;/h2&gt;
 &lt;p&gt;倾听是沟通的基础，善于倾听的人才能当个好领导。倾听不能止于听，在听的过程中要对信息进行解析，并给出积极的回应。&lt;/p&gt;
 &lt;h3 id=&#34;倾听的要点是吸收对方的信息&#34;&gt;倾听的要点是吸收对方的信息&lt;/h3&gt;
-&lt;p&gt;&lt;img src=&#34;https://github.com/doododo/doododo.github.io.git/doododo/doododo.github.io.git/p/reproducible-leadership/5.jpeg&#34;
+&lt;p&gt;&lt;img src=&#34;https://doododo.github.io/p/reproducible-leadership/5.jpeg&#34;
 	width=&#34;720&#34;
 	height=&#34;936&#34;
-	srcset=&#34;https://github.com/doododo/doododo.github.io.git/doododo/doododo.github.io.git/p/reproducible-leadership/5_hua823e4d9b042a4bac11263ce267de1cf_121005_480x0_resize_q75_box.jpeg 480w, https://github.com/doododo/doododo.github.io.git/doododo/doododo.github.io.git/p/reproducible-leadership/5_hua823e4d9b042a4bac11263ce267de1cf_121005_1024x0_resize_q75_box.jpeg 1024w&#34;
+	srcset=&#34;https://doododo.github.io/p/reproducible-leadership/5_hua823e4d9b042a4bac11263ce267de1cf_121005_480x0_resize_q75_box.jpeg 480w, https://doododo.github.io/p/reproducible-leadership/5_hua823e4d9b042a4bac11263ce267de1cf_121005_1024x0_resize_q75_box.jpeg 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;Photo by Florian Klauer on Unsplash&#34;
@@ -501,10 +501,10 @@
 &lt;h3 id=&#34;用认同化解对方的失控情绪&#34;&gt;用认同化解对方的失控情绪&lt;/h3&gt;
 &lt;p&gt;管理者一旦认可了员工的情感，就能让员工在团队中获得归属感，这种归属感是团队凝聚力的重要来源，也是团队建设中至关重要的内容。&lt;/p&gt;
 &lt;h3 id=&#34;通过正面反馈引爆你的团队&#34;&gt;通过正面反馈，引爆你的团队&lt;/h3&gt;
-&lt;p&gt;&lt;img src=&#34;https://github.com/doododo/doododo.github.io.git/doododo/doododo.github.io.git/p/reproducible-leadership/6.jpeg&#34;
+&lt;p&gt;&lt;img src=&#34;https://doododo.github.io/p/reproducible-leadership/6.jpeg&#34;
 	width=&#34;1133&#34;
 	height=&#34;394&#34;
-	srcset=&#34;https://github.com/doododo/doododo.github.io.git/doododo/doododo.github.io.git/p/reproducible-leadership/6_hubf8916a6e95b632b2ec966de850c8830_89323_480x0_resize_q75_box.jpeg 480w, https://github.com/doododo/doododo.github.io.git/doododo/doododo.github.io.git/p/reproducible-leadership/6_hubf8916a6e95b632b2ec966de850c8830_89323_1024x0_resize_q75_box.jpeg 1024w&#34;
+	srcset=&#34;https://doododo.github.io/p/reproducible-leadership/6_hubf8916a6e95b632b2ec966de850c8830_89323_480x0_resize_q75_box.jpeg 480w, https://doododo.github.io/p/reproducible-leadership/6_hubf8916a6e95b632b2ec966de850c8830_89323_1024x0_resize_q75_box.jpeg 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;Photo by Florian Klauer on Unsplash&#34;
@@ -518,10 +518,10 @@
 &lt;p&gt;无动于衷之所以可怕，最根本的原因是人的群居性。这是人类的本性，每个人在做任何事情时，都希望得到来自群体的反馈和认可，没有人可以免俗。只有得到周围的认可，他才会觉得有安全感，有归属感。如果未能得到预期的认可，就会产生浓浓的孤单感，丧失群体中本应获得的安全感，而这种紧张焦虑会使他丧失对外探索的欲望，心理变得十分脆弱。&lt;/p&gt;
 &lt;p&gt;作为管理者，我们需要让员工明确知道他做什么事情会得到表扬。但是在以往的管理经历中，我们却花了大量时间让员工明白做什么会被批评。&lt;/p&gt;
 &lt;h3 id=&#34;负面反馈时对事莫对人&#34;&gt;负面反馈时，对事莫对人&lt;/h3&gt;
-&lt;p&gt;&lt;img src=&#34;https://github.com/doododo/doododo.github.io.git/doododo/doododo.github.io.git/p/reproducible-leadership/7.jpeg&#34;
+&lt;p&gt;&lt;img src=&#34;https://doododo.github.io/p/reproducible-leadership/7.jpeg&#34;
 	width=&#34;945&#34;
 	height=&#34;615&#34;
-	srcset=&#34;https://github.com/doododo/doododo.github.io.git/doododo/doododo.github.io.git/p/reproducible-leadership/7_huc5a2f6fddda850b82785f0d57307bbf9_32908_480x0_resize_q75_box.jpeg 480w, https://github.com/doododo/doododo.github.io.git/doododo/doododo.github.io.git/p/reproducible-leadership/7_huc5a2f6fddda850b82785f0d57307bbf9_32908_1024x0_resize_q75_box.jpeg 1024w&#34;
+	srcset=&#34;https://doododo.github.io/p/reproducible-leadership/7_huc5a2f6fddda850b82785f0d57307bbf9_32908_480x0_resize_q75_box.jpeg 480w, https://doododo.github.io/p/reproducible-leadership/7_huc5a2f6fddda850b82785f0d57307bbf9_32908_1024x0_resize_q75_box.jpeg 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;Photo by Florian Klauer on Unsplash&#34;
@@ -539,10 +539,10 @@
 &lt;p&gt;I：这部分需要谈及影响，这种影响是短期的、局部的，比如员工没有按时完成任务，导致项目延期，整个团队受到了损失，要一起加班。谈及这一部分可以警醒员工之后注意。&lt;/p&gt;
 &lt;p&gt;C：后果指的是长期后果，比第二部分的影响更为深远。在这一部分里需要注意的是，不能只谈公司（团队）的深远影响，而要尽量和员工本人的长期发展挂钩，让对方清楚这些失误、错漏关系到他自身的核心利益。只有这样才能真正引起对方的重视。&lt;/p&gt;
 &lt;h2 id=&#34;第9章-有效利用时间拒绝无效努力&#34;&gt;第9章 有效利用时间，拒绝无效努力&lt;/h2&gt;
-&lt;p&gt;&lt;img src=&#34;https://github.com/doododo/doododo.github.io.git/doododo/doododo.github.io.git/p/reproducible-leadership/8.jpeg&#34;
+&lt;p&gt;&lt;img src=&#34;https://doododo.github.io/p/reproducible-leadership/8.jpeg&#34;
 	width=&#34;1146&#34;
 	height=&#34;971&#34;
-	srcset=&#34;https://github.com/doododo/doododo.github.io.git/doododo/doododo.github.io.git/p/reproducible-leadership/8_hu17e4fc5459a8d40a70481d161283de21_161634_480x0_resize_q75_box.jpeg 480w, https://github.com/doododo/doododo.github.io.git/doododo/doododo.github.io.git/p/reproducible-leadership/8_hu17e4fc5459a8d40a70481d161283de21_161634_1024x0_resize_q75_box.jpeg 1024w&#34;
+	srcset=&#34;https://doododo.github.io/p/reproducible-leadership/8_hu17e4fc5459a8d40a70481d161283de21_161634_480x0_resize_q75_box.jpeg 480w, https://doododo.github.io/p/reproducible-leadership/8_hu17e4fc5459a8d40a70481d161283de21_161634_1024x0_resize_q75_box.jpeg 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;Photo by Florian Klauer on Unsplash&#34;
@@ -565,10 +565,10 @@
         </item>
         <item>
         <title>Tencent AI OCR</title>
-        <link>https://github.com/doododo/doododo.github.io.git/p/composer-tencent-ai-ocr/</link>
+        <link>https://doododo.github.io/p/composer-tencent-ai-ocr/</link>
         <pubDate>Sat, 07 Dec 2019 00:00:00 +0000</pubDate>
         
-        <guid>https://github.com/doododo/doododo.github.io.git/p/composer-tencent-ai-ocr/</guid>
+        <guid>https://doododo.github.io/p/composer-tencent-ai-ocr/</guid>
         <description>&lt;h2 id=&#34;支持&#34;&gt;支持&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;#id-card&#34; &gt;身份证识别&lt;/a&gt;&lt;/li&gt;
@@ -1268,10 +1268,10 @@
         </item>
         <item>
         <title>情感引导方式</title>
-        <link>https://github.com/doododo/doododo.github.io.git/p/emotional-guidance/</link>
+        <link>https://doododo.github.io/p/emotional-guidance/</link>
         <pubDate>Tue, 03 Dec 2019 00:00:00 +0000</pubDate>
         
-        <guid>https://github.com/doododo/doododo.github.io.git/p/emotional-guidance/</guid>
+        <guid>https://doododo.github.io/p/emotional-guidance/</guid>
         <description>&lt;p&gt;目前对于小学生的教育已经深入到家庭，比如一些作业需要父母督导完成或帮他们检查作业。期初，我不太理解这种方式。最近几次陪孩子，我改变了这种思想。我觉得这种教育方式更能让自己陪孩子共同成长，这样孩子更能感受到父母无条件的爱，慢慢的孩子体会到父母给予的安全感。相反，如果父母总是以自己的思维教育孩子，想方设法让孩子变成梦想中的自己，几乎是不太可能的。这样，孩子会觉得很孤独，以后心里有不开心事也不会和父母交流。因为，他认为父母体会不到他的感受，也不会关心他的感受。&lt;/p&gt;
 &lt;p&gt;教育子女不是父母的义务，而是父母的责任。学校或者培训班教会孩子的是能力，而父母需要让孩子感受到来自于自己的爱。孩子年龄越小，感情越脆弱，这是人的本能。他能敏感的感知到父母对于自己态度的变化。所以，平时父母应该多用感情引导的方式和孩子交流。父母往往不能忍受孩子犯低级错误，比如：『这道题这么简单，你怎么就不会呢』、『你每次做错这种题都是因为你没有认真读题目，你真是太笨了』、『你考试成绩这么差还不想学习』。其实，这几个问题都是家长经常犯的错误。那什么才是情感引导的方式呢？『这道题你是不是不会呀，你需要妈妈帮助吗？不要担心，咱们一块学习一下，以后你就会做这种题了』、『我们一块来读一下这道题吧，再慢慢的读一下题目你可能会有惊喜吆』、『今天你是不是有点不高兴，没事，我们可以一块学习下这些错题，下一次你一定能考个好成绩』。&lt;/p&gt;
 &lt;p&gt;其实，情感引导方式总结起来很简单。&lt;/p&gt;
@@ -1286,10 +1286,10 @@
         </item>
         <item>
         <title>一个父亲的反思</title>
-        <link>https://github.com/doododo/doododo.github.io.git/p/think-how-to-father/</link>
+        <link>https://doododo.github.io/p/think-how-to-father/</link>
         <pubDate>Tue, 19 Nov 2019 00:00:00 +0000</pubDate>
         
-        <guid>https://github.com/doododo/doododo.github.io.git/p/think-how-to-father/</guid>
+        <guid>https://doododo.github.io/p/think-how-to-father/</guid>
         <description>&lt;p&gt;随着年龄的增长，家庭问题俞显得重要。如何做一个好儿子、如何做一个好丈夫、如何做一个好父亲？最近对于一个家庭中父母孩子的问题做了一些反思。&lt;/p&gt;
 &lt;h2 id=&#34;和孩子共识问题的本质&#34;&gt;和孩子共识问题的本质&lt;/h2&gt;
 &lt;blockquote&gt;
@@ -1310,10 +1310,10 @@
         </item>
         <item>
         <title>领导力之工程师做管理（二）</title>
-        <link>https://github.com/doododo/doododo.github.io.git/p/coder-to-manger-2/</link>
+        <link>https://doododo.github.io/p/coder-to-manger-2/</link>
         <pubDate>Mon, 15 Jul 2019 00:00:00 +0000</pubDate>
         
-        <guid>https://github.com/doododo/doododo.github.io.git/p/coder-to-manger-2/</guid>
+        <guid>https://doododo.github.io/p/coder-to-manger-2/</guid>
         <description>&lt;h2 id=&#34;工程师转型的方向&#34;&gt;工程师转型的方向&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;
@@ -1365,10 +1365,10 @@
         </item>
         <item>
         <title>领导力之工程师做管理（一）</title>
-        <link>https://github.com/doododo/doododo.github.io.git/p/coder-to-manger-1/</link>
+        <link>https://doododo.github.io/p/coder-to-manger-1/</link>
         <pubDate>Sun, 14 Jul 2019 00:00:00 +0000</pubDate>
         
-        <guid>https://github.com/doododo/doododo.github.io.git/p/coder-to-manger-1/</guid>
+        <guid>https://doododo.github.io/p/coder-to-manger-1/</guid>
         <description>&lt;p&gt;技术出身的管理者，转型初期，大多数人聚焦到自身和自己的能力上，这会导致一个很大的问题。工作上遇到稍微难一点的事情就喜欢亲自上阵，甚至所有代码都要自己写了才放心。&lt;/p&gt;
 &lt;p&gt;从某种程度上，这其实是对团队成员的不信任。一开始团队小，这种方式还行的通，最多是自己累点，而且，慢慢的团队成员越来越依赖我，自己还会产生优越感。一定要要改变自己的潜意识“这件事儿很复杂，交给别人做没有自己处理来的高效、快、稳妥”。其实，这就是在用静态思维看待动态发展的问题。慢慢放手后，别人可以做比自己更好，只要给他机会、资源、支持和帮助。&lt;/p&gt;
 &lt;p&gt;兼容并包的领导方式。多样化的员工才会创造多样化的企业文化，才能保持组织的创新能力。只有人才的多样化和领导的包容性并存，团队才会越来越好，越来越有活力，保持创新能力。&lt;/p&gt;
@@ -1502,10 +1502,10 @@
         </item>
         <item>
         <title>领导力之OKR</title>
-        <link>https://github.com/doododo/doododo.github.io.git/p/okr/</link>
+        <link>https://doododo.github.io/p/okr/</link>
         <pubDate>Sun, 07 Jul 2019 00:00:00 +0000</pubDate>
         
-        <guid>https://github.com/doododo/doododo.github.io.git/p/okr/</guid>
+        <guid>https://doododo.github.io/p/okr/</guid>
         <description>&lt;h2 id=&#34;okr落地的先决条件&#34;&gt;OKR落地的先决条件&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;面对沟通时，是否公开透明，公开场合下表达自己的观点&lt;/li&gt;
@@ -1630,18 +1630,18 @@ OKR 关注的是结果和过程，更关注过程，而 KPI 关注的只是结�
         </item>
         <item>
         <title>Archives</title>
-        <link>https://github.com/doododo/doododo.github.io.git/archives/</link>
+        <link>https://doododo.github.io/archives/</link>
         <pubDate>Tue, 28 May 2019 00:00:00 +0000</pubDate>
         
-        <guid>https://github.com/doododo/doododo.github.io.git/archives/</guid>
+        <guid>https://doododo.github.io/archives/</guid>
         <description></description>
         </item>
         <item>
         <title>About Me</title>
-        <link>https://github.com/doododo/doododo.github.io.git/about-me/</link>
+        <link>https://doododo.github.io/about-me/</link>
         <pubDate>Mon, 01 Feb 2010 00:00:00 +0000</pubDate>
         
-        <guid>https://github.com/doododo/doododo.github.io.git/about-me/</guid>
+        <guid>https://doododo.github.io/about-me/</guid>
         <description>&lt;blockquote&gt;
 &lt;p&gt;以前，和朋友聊天，他们问我的价值观，我总是含糊其辞，说这个东西很抽象。2018-2019年，陆续看完《王阳明大传》、《王阳明哲学》和《知行合一|王阳明》后，我说：『凡事遵从自己的内心』。&lt;/p&gt;
 &lt;/blockquote&gt;
@@ -1650,10 +1650,10 @@ OKR 关注的是结果和过程，更关注过程，而 KPI 关注的只是结�
         </item>
         <item>
         <title>Search</title>
-        <link>https://github.com/doododo/doododo.github.io.git/search/</link>
+        <link>https://doododo.github.io/search/</link>
         <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
         
-        <guid>https://github.com/doododo/doododo.github.io.git/search/</guid>
+        <guid>https://doododo.github.io/search/</guid>
         <description></description>
         </item>
         
