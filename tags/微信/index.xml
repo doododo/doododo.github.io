@@ -18,6 +18,12 @@
 &lt;/blockquote&gt;
 &lt;p&gt;&lt;code&gt;wx-open&lt;/code&gt; 是基于官方代码修改的本地化部署，优先阅读官方文档：&lt;a class=&#34;link&#34; href=&#34;https://developers.weixin.qq.com/doc/oplatform/Third-party_Platforms/2.0/product/management-tools.html&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;服务商微管家介绍&lt;/a&gt;.&lt;/p&gt;
+&lt;h2 id=&#34;临时体验&#34;&gt;临时体验&lt;/h2&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;http://8.131.90.141:8666&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;http://8.131.90.141:8666/&lt;/a&gt;  用户名：&lt;code&gt;root&lt;/code&gt;  密码：&lt;code&gt;123456&lt;/code&gt; （不要改密码哈，临时部署，账号、服务器是别人赞助的，没法访问就是服务关闭了）&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;有问题留言反馈，生成授权链接复制的时候会失败，应该是我没开https导致的，打开控制台手动复制授权就行，或者自己根据路由跳转：&lt;code&gt;/#/authorize&lt;/code&gt;: &lt;code&gt;PC 版授权链接&lt;/code&gt;，&lt;code&gt;/#/authorizeH5&lt;/code&gt;:&lt;code&gt;H5 版授权链接&lt;/code&gt;&lt;/p&gt;
 &lt;h3 id=&#34;主要变动&#34;&gt;主要变动&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;添加消息解密中间件，本地化部署&lt;/li&gt;
