@@ -258,6 +258,74 @@
 </description>
         </item>
         <item>
+        <title>微信服务商微管家本地化部署</title>
+        <link>https://doododo.github.io/p/golang-wx-open-wxcloudrun-wxcomponent/</link>
+        <pubDate>Mon, 15 May 2023 00:00:00 +0000</pubDate>
+        
+        <guid>https://doododo.github.io/p/golang-wx-open-wxcloudrun-wxcomponent/</guid>
+        <description>&lt;h2 id=&#34;功能介绍&#34;&gt;功能介绍&lt;/h2&gt;
+&lt;blockquote&gt;
+&lt;p&gt;官方提供的服务商微管家版本已满足大部分人使用，而且很适合学习和二次开发。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;code&gt;wx-open&lt;/code&gt; 是基于官方代码修改的本地化部署，优先阅读官方文档：&lt;a class=&#34;link&#34; href=&#34;https://developers.weixin.qq.com/doc/oplatform/Third-party_Platforms/2.0/product/management-tools.html&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;服务商微管家介绍&lt;/a&gt;.&lt;/p&gt;
+&lt;h3 id=&#34;主要变动&#34;&gt;主要变动&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;添加消息解密中间件，本地化部署&lt;/li&gt;
+&lt;li&gt;统一数据表开头为 &lt;code&gt;wx&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;配置文件不再区分 &lt;code&gt;env&lt;/code&gt;和 &lt;code&gt;server.conf&lt;/code&gt;，统一在根目录调整 &lt;code&gt;config.conf&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src=&#34;https://res.wx.qq.com/op_res/BF2B0NQ2bKt-rJQL--cB3fUuCyllmnvJdFT57k786XuTE5UJQh4x8KjxiaGsg48qsqLtlP1kCZcr7E48DKq2xg&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;index&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;h2 id=&#34;使用方法&#34;&gt;使用方法&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;下载 &lt;code&gt;Linux&lt;/code&gt; 打包文件 &lt;code&gt;wx-open&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;自行修改对应配置项 &lt;code&gt;config.conf&lt;/code&gt;。&lt;/li&gt;
+&lt;li&gt;运行 &lt;code&gt;./wx-open&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;根据自己 &lt;code&gt;ip+端口&lt;/code&gt; 或者 &lt;code&gt;域名&lt;/code&gt; 登陆后台，进入 &lt;code&gt;Secret与密码管理&lt;/code&gt; 修改 &lt;code&gt;第三方 Secret&lt;/code&gt;，别忘了开 &lt;code&gt;https&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;4
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;5
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# 目录接口&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;├── client
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;│   └── dist
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;├── config.conf
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;└── wx-open
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;h2 id=&#34;常见问题&#34;&gt;常见问题&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;如果授权链接没有复制成功，自己打开浏览器 &lt;code&gt;控制台&lt;/code&gt;，自己手动复制授权链接即可&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;隐藏接口&#34;&gt;隐藏接口&lt;/h2&gt;
+&lt;p&gt;TODO::后续有时间陆续整理&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;如需拉取部署微管家以前的授权数据，可向微管家服务发起数据同步请求，请求说明如下：
+&lt;ul&gt;
+&lt;li&gt;method: POST&lt;/li&gt;
+&lt;li&gt;path: wxcomponent/admin/pull-authorizer-list&lt;/li&gt;
+&lt;li&gt;header: &lt;code&gt;Authorization: Bear &amp;lt;your jwt&amp;gt;&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        </item>
+        <item>
         <title>乏味——好久没写点东西了</title>
         <link>https://doododo.github.io/p/about-chinese-philosophy-1/</link>
         <pubDate>Tue, 29 Jun 2021 00:00:00 +0000</pubDate>
