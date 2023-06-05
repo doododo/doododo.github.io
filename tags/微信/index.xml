@@ -6,10 +6,10 @@
         <description>Recent content in 微信 on 智慧与哲学</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
-        <lastBuildDate>Mon, 15 May 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://doododo.github.io/tags/%E5%BE%AE%E4%BF%A1/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Mon, 05 Jun 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://doododo.github.io/tags/%E5%BE%AE%E4%BF%A1/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>微信服务商微管家本地化部署</title>
         <link>https://doododo.github.io/p/golang-wx-open-wxcloudrun-wxcomponent/</link>
-        <pubDate>Mon, 15 May 2023 00:00:00 +0000</pubDate>
+        <pubDate>Mon, 05 Jun 2023 00:00:00 +0000</pubDate>
         
         <guid>https://doododo.github.io/p/golang-wx-open-wxcloudrun-wxcomponent/</guid>
         <description>&lt;h2 id=&#34;功能介绍&#34;&gt;功能介绍&lt;/h2&gt;
@@ -36,8 +36,9 @@
 &gt;&lt;/p&gt;
 &lt;h2 id=&#34;使用方法&#34;&gt;使用方法&lt;/h2&gt;
 &lt;ul&gt;
-&lt;li&gt;下载 &lt;code&gt;Linux&lt;/code&gt; 打包文件 &lt;code&gt;wx-open&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;自行修改对应配置项 &lt;code&gt;config.conf&lt;/code&gt;。&lt;/li&gt;
+&lt;li&gt;下载 &lt;code&gt;Linux&lt;/code&gt; 包文件 &lt;a class=&#34;link&#34; href=&#34;https://www.aliyundrive.com/s/qjcdRD3rPaj&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;&lt;code&gt;wx-open&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;自行修改对应配置项 &lt;code&gt;config.conf&lt;/code&gt;&lt;/li&gt;
 &lt;li&gt;运行 &lt;code&gt;./wx-open&lt;/code&gt;&lt;/li&gt;
 &lt;li&gt;根据自己 &lt;code&gt;ip+端口&lt;/code&gt; 或者 &lt;code&gt;域名&lt;/code&gt; 登陆后台，进入 &lt;code&gt;Secret与密码管理&lt;/code&gt; 修改 &lt;code&gt;第三方 Secret&lt;/code&gt;，别忘了开 &lt;code&gt;https&lt;/code&gt;&lt;/li&gt;
 &lt;/ul&gt;
