@@ -42,8 +42,7 @@
 &gt;&lt;/p&gt;
 &lt;h2 id=&#34;使用方法&#34;&gt;使用方法&lt;/h2&gt;
 &lt;ul&gt;
-&lt;li&gt;下载 &lt;code&gt;Linux&lt;/code&gt; 包文件 &lt;a class=&#34;link&#34; href=&#34;https://www.aliyundrive.com/s/qjcdRD3rPaj&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;&lt;code&gt;wx-open&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;下载 &lt;code&gt;Linux&lt;/code&gt; 包文件 &lt;a class=&#34;link&#34; href=&#34;!https://pan.baidu.com/s/1eCLbWAL-VS6EtAxEI1G0bw?pwd=6g72&#34; &gt;&lt;code&gt;wx-open&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;自行修改对应配置项 &lt;code&gt;config.conf&lt;/code&gt;&lt;/li&gt;
 &lt;li&gt;运行 &lt;code&gt;./wx-open&lt;/code&gt;&lt;/li&gt;
 &lt;li&gt;根据自己 &lt;code&gt;ip+端口&lt;/code&gt; 或者 &lt;code&gt;域名&lt;/code&gt; 登陆后台，进入 &lt;code&gt;Secret与密码管理&lt;/code&gt; 修改 &lt;code&gt;第三方 Secret&lt;/code&gt;，别忘了开 &lt;code&gt;https&lt;/code&gt;&lt;/li&gt;
