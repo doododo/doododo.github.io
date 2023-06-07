@@ -23,7 +23,7 @@
 &lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;http://8.131.90.141:8666&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;http://8.131.90.141:8666/&lt;/a&gt;  用户名：&lt;code&gt;root&lt;/code&gt;  密码：&lt;code&gt;123456&lt;/code&gt; （不要改密码哈，临时部署，账号、服务器是别人赞助的，没法访问就是服务关闭了）&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;p&gt;有问题留言反馈，生成授权链接复制的时候会失败，应该是我没开https导致的，打开控制台手动复制授权就行，或者自己根据路由跳转：&lt;code&gt;/#/authorize&lt;/code&gt;: &lt;code&gt;PC 版授权链接&lt;/code&gt;，&lt;code&gt;/#/authorizeH5&lt;/code&gt;:&lt;code&gt;H5 版授权链接&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;有问题留言反馈，生成授权链接复制的时候会失败，应该是我没开https导致的，打开控制台手动复制授权就行，或者自己根据路由跳转：&lt;code&gt;/#/authorize&lt;/code&gt;: &lt;code&gt;PC 版授权链接&lt;/code&gt;，&lt;code&gt;/#/authorizeH5&lt;/code&gt;:&lt;code&gt;H5 版授权链接&lt;/code&gt;。&lt;strong&gt;（感谢网友，已验证开启 &lt;code&gt;https&lt;/code&gt; 可以正常复制）&lt;/strong&gt;&lt;/p&gt;
 &lt;h3 id=&#34;主要变动&#34;&gt;主要变动&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;添加消息解密中间件，本地化部署&lt;/li&gt;
@@ -65,6 +65,7 @@
 &lt;/div&gt;
 &lt;/div&gt;&lt;h2 id=&#34;常见问题&#34;&gt;常见问题&lt;/h2&gt;
 &lt;ul&gt;
+&lt;li&gt;关于配置文件的问题，建议多读官方文档&lt;/li&gt;
 &lt;li&gt;如果授权链接没有复制成功，自己打开浏览器 &lt;code&gt;控制台&lt;/code&gt;，自己手动复制授权链接即可&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id=&#34;隐藏接口&#34;&gt;隐藏接口&lt;/h2&gt;
@@ -78,6 +79,28 @@
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
+&lt;h2 id=&#34;感谢各位&#34;&gt;感谢各位&lt;/h2&gt;
+&lt;blockquote&gt;
+&lt;p&gt;在此非常感谢各位的啤酒/咖啡/可乐支持，不要超过100哦，祝大家事业有成。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;时间&lt;/th&gt;
+&lt;th&gt;昵称&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;2023-06-06&lt;/td&gt;
+&lt;td&gt;木子&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;2023-06-07&lt;/td&gt;
+&lt;td&gt;大猩猩&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
 </description>
         </item>
         
