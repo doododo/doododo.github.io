@@ -10,7 +10,7 @@
 <meta property='og:description' content='服务商微管家不仅可以部署到云托管，还可以部署到本地，而且官方提供的接口比页面更多'>
 <meta property='og:url' content='https://doododo.github.io/p/golang-wx-open-wxcloudrun-wxcomponent/'>
 <meta property='og:site_name' content='智慧与哲学'>
-<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='Golang' /><meta property='article:tag' content='编程' /><meta property='article:tag' content='微信' /><meta property='article:published_time' content='2023-06-05T00:00:00&#43;00:00'/><meta property='article:modified_time' content='2023-06-05T00:00:00&#43;00:00'/>
+<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='Golang' /><meta property='article:tag' content='编程' /><meta property='article:tag' content='微信' /><meta property='article:published_time' content='2023-06-04T00:00:00&#43;00:00'/><meta property='article:modified_time' content='2023-06-04T00:00:00&#43;00:00'/>
 <meta name="twitter:title" content="微信服务商微管家本地化部署">
 <meta name="twitter:description" content="服务商微管家不仅可以部署到云托管，还可以部署到本地，而且官方提供的接口比页面更多">
     <link rel="shortcut icon" href="/favicon.ico" />
@@ -232,7 +232,7 @@
   <path d="M3 11h16" />
   <path d="M18 16.496v1.504l1 1" />
 </svg>
-                <time class="article-time--published">Jun 05, 2023</time>
+                <time class="article-time--published">Jun 04, 2023</time>
             </div>
         
 
@@ -266,20 +266,20 @@
 <blockquote>
 <p>官方提供的服务商微管家版本已满足大部分人使用，而且很适合学习和二次开发，抛砖引玉的告诉大家如何开始从三方平台接触微信开发、部署到云托管、二次开发其他应用等。具体功能参考官网的介绍。</p>
 </blockquote>
-<p><code>wx-open</code> 是基于官方代码修改的本地化部署，优先阅读官方文档：<a class="link" href="https://developers.weixin.qq.com/doc/oplatform/Third-party_Platforms/2.0/product/management-tools.html"  target="_blank" rel="noopener"
+<p><code>wx-open</code> 是基于官方代码修改的本地化部署，<strong>优先阅读官方文档</strong>：<a class="link" href="https://developers.weixin.qq.com/doc/oplatform/Third-party_Platforms/2.0/product/management-tools.html"  target="_blank" rel="noopener"
     >服务商微管家介绍</a>.</p>
 <h2 id="临时体验">临时体验</h2>
 <blockquote>
 <p><a class="link" href="http://8.131.90.141:8666"  target="_blank" rel="noopener"
-    >点击测试</a>  用户名：<code>root</code>  密码：<code>123456</code> （不要改密码哈，临时部署，账号、服务器是别人赞助的，没法访问就是服务关闭了）</p>
+    >点击测试</a>  用户名：<code>root</code>  密码：<code>123456</code> （不要改密码哈，临时部署，账号、服务器是他人赞助的，没法访问就是服务关闭了）</p>
 </blockquote>
 <p>有问题留言反馈，生成授权链接复制的时候会失败，应该是我没开https导致的，打开控制台手动复制授权就行，或者自己根据路由跳转：<code>/#/authorize</code>: <code>PC 版授权链接</code>，<code>/#/authorizeH5</code>:<code>H5 版授权链接</code>。<strong>（感谢网友，已验证开启 <code>https</code> 可以正常复制）</strong></p>
 <h3 id="主要变动">主要变动</h3>
 <ul>
-<li>添加消息解密中间件，本地化部署</li>
-<li>统一数据表开头为 <code>wx</code></li>
-<li>配置文件不再区分 <code>env</code>和 <code>server.conf</code>，统一在根目录调整 <code>config.conf</code></li>
-<li>前端新增 <code>拉取部署微管家以前的授权数据</code></li>
+<li>添加消息解密中间件，本地化部署，不在依赖云托管。</li>
+<li>统一数据表开头为 <code>wx</code>。<strong>避免和自己其他业务数据表区分</strong></li>
+<li>配置文件不再区分 <code>env</code>和 <code>server.conf</code>，统一在根目录调整 <code>config.conf</code>。<strong>官方用env主要是为了结合云托管，部分参数在创建环境的时候设置，我们本地化部署后统一管理相对方便一些</strong></li>
+<li>前端新增 <code>拉取部署微管家以前的授权数据</code>，修复一些其他小bug。<strong>这个接口是官方预留的，原来只能通过postman自己跑一下，拿出来更方便操作一些</strong></li>
 </ul>
 <p><img src="/p/golang-wx-open-wxcloudrun-wxcomponent/1.png"
 	width="3834"

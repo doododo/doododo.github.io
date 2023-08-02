@@ -6,30 +6,30 @@
         <description>Recent content in 微信 on 智慧与哲学</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
-        <lastBuildDate>Mon, 05 Jun 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://doododo.github.io/tags/%E5%BE%AE%E4%BF%A1/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Sun, 04 Jun 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://doododo.github.io/tags/%E5%BE%AE%E4%BF%A1/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>微信服务商微管家本地化部署</title>
         <link>https://doododo.github.io/p/golang-wx-open-wxcloudrun-wxcomponent/</link>
-        <pubDate>Mon, 05 Jun 2023 00:00:00 +0000</pubDate>
+        <pubDate>Sun, 04 Jun 2023 00:00:00 +0000</pubDate>
         
         <guid>https://doododo.github.io/p/golang-wx-open-wxcloudrun-wxcomponent/</guid>
         <description>&lt;h2 id=&#34;功能介绍&#34;&gt;功能介绍&lt;/h2&gt;
 &lt;blockquote&gt;
 &lt;p&gt;官方提供的服务商微管家版本已满足大部分人使用，而且很适合学习和二次开发，抛砖引玉的告诉大家如何开始从三方平台接触微信开发、部署到云托管、二次开发其他应用等。具体功能参考官网的介绍。&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;p&gt;&lt;code&gt;wx-open&lt;/code&gt; 是基于官方代码修改的本地化部署，优先阅读官方文档：&lt;a class=&#34;link&#34; href=&#34;https://developers.weixin.qq.com/doc/oplatform/Third-party_Platforms/2.0/product/management-tools.html&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+&lt;p&gt;&lt;code&gt;wx-open&lt;/code&gt; 是基于官方代码修改的本地化部署，&lt;strong&gt;优先阅读官方文档&lt;/strong&gt;：&lt;a class=&#34;link&#34; href=&#34;https://developers.weixin.qq.com/doc/oplatform/Third-party_Platforms/2.0/product/management-tools.html&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;服务商微管家介绍&lt;/a&gt;.&lt;/p&gt;
 &lt;h2 id=&#34;临时体验&#34;&gt;临时体验&lt;/h2&gt;
 &lt;blockquote&gt;
 &lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;http://8.131.90.141:8666&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;点击测试&lt;/a&gt;  用户名：&lt;code&gt;root&lt;/code&gt;  密码：&lt;code&gt;123456&lt;/code&gt; （不要改密码哈，临时部署，账号、服务器是别人赞助的，没法访问就是服务关闭了）&lt;/p&gt;
+    &gt;点击测试&lt;/a&gt;  用户名：&lt;code&gt;root&lt;/code&gt;  密码：&lt;code&gt;123456&lt;/code&gt; （不要改密码哈，临时部署，账号、服务器是他人赞助的，没法访问就是服务关闭了）&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;有问题留言反馈，生成授权链接复制的时候会失败，应该是我没开https导致的，打开控制台手动复制授权就行，或者自己根据路由跳转：&lt;code&gt;/#/authorize&lt;/code&gt;: &lt;code&gt;PC 版授权链接&lt;/code&gt;，&lt;code&gt;/#/authorizeH5&lt;/code&gt;:&lt;code&gt;H5 版授权链接&lt;/code&gt;。&lt;strong&gt;（感谢网友，已验证开启 &lt;code&gt;https&lt;/code&gt; 可以正常复制）&lt;/strong&gt;&lt;/p&gt;
 &lt;h3 id=&#34;主要变动&#34;&gt;主要变动&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;添加消息解密中间件，本地化部署&lt;/li&gt;
-&lt;li&gt;统一数据表开头为 &lt;code&gt;wx&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;配置文件不再区分 &lt;code&gt;env&lt;/code&gt;和 &lt;code&gt;server.conf&lt;/code&gt;，统一在根目录调整 &lt;code&gt;config.conf&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;前端新增 &lt;code&gt;拉取部署微管家以前的授权数据&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;添加消息解密中间件，本地化部署，不在依赖云托管。&lt;/li&gt;
+&lt;li&gt;统一数据表开头为 &lt;code&gt;wx&lt;/code&gt;。&lt;strong&gt;避免和自己其他业务数据表区分&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;配置文件不再区分 &lt;code&gt;env&lt;/code&gt;和 &lt;code&gt;server.conf&lt;/code&gt;，统一在根目录调整 &lt;code&gt;config.conf&lt;/code&gt;。&lt;strong&gt;官方用env主要是为了结合云托管，部分参数在创建环境的时候设置，我们本地化部署后统一管理相对方便一些&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;前端新增 &lt;code&gt;拉取部署微管家以前的授权数据&lt;/code&gt;，修复一些其他小bug。&lt;strong&gt;这个接口是官方预留的，原来只能通过postman自己跑一下，拿出来更方便操作一些&lt;/strong&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;&lt;img src=&#34;https://doododo.github.io/p/golang-wx-open-wxcloudrun-wxcomponent/1.png&#34;
 	width=&#34;3834&#34;
