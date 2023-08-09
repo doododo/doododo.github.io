@@ -275,6 +275,17 @@
 <li>配置文件不再区分 <code>env</code>和 <code>server.conf</code>，统一在根目录调整 <code>config.conf</code>。<strong>官方用env主要是为了结合云托管，部分参数在创建环境的时候设置，我们本地化部署后统一管理相对方便一些</strong></li>
 <li>前端新增 <code>拉取部署微管家以前的授权数据</code>，修复一些其他小bug。<strong>这个接口是官方预留的，原来只能通过postman自己跑一下，拿出来更方便操作一些</strong></li>
 </ul>
+<h3 id="更新230809">更新230809</h3>
+<blockquote>
+<p>升级方法：点击下载 <a class="link" href="https://pan.baidu.com/s/1lAT1QsqCmombFgdrf_IFqQ?pwd=zfdf"  target="_blank" rel="noopener"
+    ><code>wx-open</code></a>。备份当前目录，覆盖 <code>client</code>目录，<code>wx-open</code>文件，按照 <code>config_example.conf</code> 文件自己删除掉本地 <code>config.conf</code>，最后重启服务。</p>
+</blockquote>
+<ul>
+<li>优化后端日志打印</li>
+<li>废弃配置文件里一些无用的配置项，对一些关键的配置做了详细的说明</li>
+<li>废弃云托管一些判断逻辑</li>
+<li>前端页面调整为本地部署相关信息</li>
+</ul>
 <p><img src="/p/golang-wx-open-wxcloudrun-wxcomponent/1.png"
 	width="3834"
 	height="1884"
@@ -291,8 +302,8 @@
 ></p>
 <h2 id="使用方法">使用方法</h2>
 <ul>
-<li>下载 <code>Linux</code> 包文件 <a class="link" href="https://pan.baidu.com/s/1lAT1QsqCmombFgdrf_IFqQ?pwd=zfdf"  target="_blank" rel="noopener"
-    ><code>wx-open</code></a></li>
+<li>下载 <code>Linux</code> 文件 <a class="link" href="https://pan.baidu.com/s/1lAT1QsqCmombFgdrf_IFqQ?pwd=zfdf"  target="_blank" rel="noopener"
+    ><code>wx-open</code></a> <strong>根目录为最早起的版本，文件夹里的版本都是按照上面更新记录的版本，直接下载最新文件夹的版本部署就可以</strong></li>
 <li>重命名<code>config_example.conf</code> =&gt; <code>config.conf</code>，自行修改对应配置项，最终目录结构如下</li>
 <li>运行 <code>./wx-open</code></li>
 <li>根据自己 <code>ip+端口</code> 或者 <code>域名</code> 登陆后台，进入 <code>Secret与密码管理</code> 修改 <code>第三方 Secret</code>，别忘了开 <code>https</code></li>

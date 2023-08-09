@@ -25,6 +25,17 @@
 &lt;li&gt;配置文件不再区分 &lt;code&gt;env&lt;/code&gt;和 &lt;code&gt;server.conf&lt;/code&gt;，统一在根目录调整 &lt;code&gt;config.conf&lt;/code&gt;。&lt;strong&gt;官方用env主要是为了结合云托管，部分参数在创建环境的时候设置，我们本地化部署后统一管理相对方便一些&lt;/strong&gt;&lt;/li&gt;
 &lt;li&gt;前端新增 &lt;code&gt;拉取部署微管家以前的授权数据&lt;/code&gt;，修复一些其他小bug。&lt;strong&gt;这个接口是官方预留的，原来只能通过postman自己跑一下，拿出来更方便操作一些&lt;/strong&gt;&lt;/li&gt;
 &lt;/ul&gt;
+&lt;h3 id=&#34;更新230809&#34;&gt;更新230809&lt;/h3&gt;
+&lt;blockquote&gt;
+&lt;p&gt;升级方法：点击下载 &lt;a class=&#34;link&#34; href=&#34;https://pan.baidu.com/s/1lAT1QsqCmombFgdrf_IFqQ?pwd=zfdf&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;&lt;code&gt;wx-open&lt;/code&gt;&lt;/a&gt;。备份当前目录，覆盖 &lt;code&gt;client&lt;/code&gt;目录，&lt;code&gt;wx-open&lt;/code&gt;文件，按照 &lt;code&gt;config_example.conf&lt;/code&gt; 文件自己删除掉本地 &lt;code&gt;config.conf&lt;/code&gt;，最后重启服务。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;优化后端日志打印&lt;/li&gt;
+&lt;li&gt;废弃配置文件里一些无用的配置项，对一些关键的配置做了详细的说明&lt;/li&gt;
+&lt;li&gt;废弃云托管一些判断逻辑&lt;/li&gt;
+&lt;li&gt;前端页面调整为本地部署相关信息&lt;/li&gt;
+&lt;/ul&gt;
 &lt;p&gt;&lt;img src=&#34;https://doododo.github.io/p/golang-wx-open-wxcloudrun-wxcomponent/1.png&#34;
 	width=&#34;3834&#34;
 	height=&#34;1884&#34;
@@ -41,8 +52,8 @@
 &gt;&lt;/p&gt;
 &lt;h2 id=&#34;使用方法&#34;&gt;使用方法&lt;/h2&gt;
 &lt;ul&gt;
-&lt;li&gt;下载 &lt;code&gt;Linux&lt;/code&gt; 包文件 &lt;a class=&#34;link&#34; href=&#34;https://pan.baidu.com/s/1lAT1QsqCmombFgdrf_IFqQ?pwd=zfdf&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;&lt;code&gt;wx-open&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;下载 &lt;code&gt;Linux&lt;/code&gt; 文件 &lt;a class=&#34;link&#34; href=&#34;https://pan.baidu.com/s/1lAT1QsqCmombFgdrf_IFqQ?pwd=zfdf&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;&lt;code&gt;wx-open&lt;/code&gt;&lt;/a&gt; &lt;strong&gt;根目录为最早起的版本，文件夹里的版本都是按照上面更新记录的版本，直接下载最新文件夹的版本部署就可以&lt;/strong&gt;&lt;/li&gt;
 &lt;li&gt;重命名&lt;code&gt;config_example.conf&lt;/code&gt; =&amp;gt; &lt;code&gt;config.conf&lt;/code&gt;，自行修改对应配置项，最终目录结构如下&lt;/li&gt;
 &lt;li&gt;运行 &lt;code&gt;./wx-open&lt;/code&gt;&lt;/li&gt;
 &lt;li&gt;根据自己 &lt;code&gt;ip+端口&lt;/code&gt; 或者 &lt;code&gt;域名&lt;/code&gt; 登陆后台，进入 &lt;code&gt;Secret与密码管理&lt;/code&gt; 修改 &lt;code&gt;第三方 Secret&lt;/code&gt;，别忘了开 &lt;code&gt;https&lt;/code&gt;&lt;/li&gt;
