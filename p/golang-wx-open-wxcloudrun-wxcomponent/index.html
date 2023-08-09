@@ -264,16 +264,10 @@
     
     <h2 id="功能介绍">功能介绍</h2>
 <blockquote>
-<p>官方提供的服务商微管家版本已满足大部分人使用，而且很适合学习和二次开发，抛砖引玉的告诉大家如何开始从三方平台接触微信开发、部署到云托管、二次开发其他应用等。具体功能参考官网的介绍。</p>
+<p>官方提供的服务商微管家版本已满足大部分人使用，而且很适合学习和二次开发，抛砖引玉的告诉大家如何开始从三方平台接触微信开发、部署到云托管、二次开发其他应用等，具体功能参考官网的介绍。<strong>有能力的还是推荐使用官方的云托管</strong></p>
 </blockquote>
 <p><code>wx-open</code> 是基于官方代码修改的本地化部署，<strong>优先阅读官方文档</strong>：<a class="link" href="https://developers.weixin.qq.com/doc/oplatform/Third-party_Platforms/2.0/product/management-tools.html"  target="_blank" rel="noopener"
     >服务商微管家介绍</a>.</p>
-<h2 id="临时体验">临时体验</h2>
-<blockquote>
-<p><a class="link" href="http://8.131.90.141:8666"  target="_blank" rel="noopener"
-    >点击测试</a>  用户名：<code>root</code>  密码：<code>123456</code> （不要改密码哈，临时部署，账号、服务器是他人赞助的，没法访问就是服务关闭了）</p>
-</blockquote>
-<p>有问题留言反馈，生成授权链接复制的时候会失败，应该是我没开https导致的，打开控制台手动复制授权就行，或者自己根据路由跳转：<code>/#/authorize</code>: <code>PC 版授权链接</code>，<code>/#/authorizeH5</code>:<code>H5 版授权链接</code>。<strong>（感谢网友，已验证开启 <code>https</code> 可以正常复制）</strong></p>
 <h3 id="主要变动">主要变动</h3>
 <ul>
 <li>添加消息解密中间件，本地化部署，不在依赖云托管。</li>
@@ -299,7 +293,7 @@
 <ul>
 <li>下载 <code>Linux</code> 包文件 <a class="link" href="https://pan.baidu.com/s/1lAT1QsqCmombFgdrf_IFqQ?pwd=zfdf"  target="_blank" rel="noopener"
     ><code>wx-open</code></a></li>
-<li>自行修改对应配置项 <code>config.conf</code></li>
+<li>重命名<code>config_example.conf</code> =&gt; <code>config.conf</code>，自行修改对应配置项，最终目录结构如下</li>
 <li>运行 <code>./wx-open</code></li>
 <li>根据自己 <code>ip+端口</code> 或者 <code>域名</code> 登陆后台，进入 <code>Secret与密码管理</code> 修改 <code>第三方 Secret</code>，别忘了开 <code>https</code></li>
 </ul>
@@ -321,8 +315,11 @@
 </div>
 </div><h2 id="常见问题">常见问题</h2>
 <ul>
-<li>关于配置文件的问题，建议多读官方文档</li>
-<li>如果授权链接没有复制成功，自己打开浏览器 <code>控制台</code>，自己手动复制授权链接即可</li>
+<li><strong>关于配置文件的问题，建议多读官方文档</strong></li>
+<li>如果授权链接没有复制成功，应该是没有开 https 导致的。打开浏览器 <code>控制台</code>，自己手动复制授权链接即可</li>
+<li>配置文件仔细核对</li>
+<li>端口被占用，修改配置文件即可</li>
+<li><strong>还有其他问题请提供测试服务器或者运行日志</strong></li>
 </ul>
 <h2 id="感谢各位">感谢各位</h2>
 <blockquote>
