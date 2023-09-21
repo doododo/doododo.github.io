@@ -81,6 +81,7 @@
 &lt;li&gt;配置文件仔细核对&lt;/li&gt;
 &lt;li&gt;端口被占用，修改配置文件即可&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;还有其他问题请提供测试服务器或者运行日志&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;拉取已授权账号失败，在 MySQL 运行 select now(); 查一下MySQL配置的时区是否正常。&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id=&#34;感谢各位&#34;&gt;感谢各位&lt;/h2&gt;
 &lt;blockquote&gt;
