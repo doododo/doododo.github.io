@@ -74,6 +74,23 @@
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;└── wx-open      &lt;span class=&#34;c1&#34;&gt;# Linux打包的可执行文件，需要打包其他平台留言&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
+&lt;/div&gt;&lt;ul&gt;
+&lt;li&gt;内网端口怎么用？内网服务，主要用于二次开发或者服务对接，内部服务包含获取 &lt;code&gt;component-access-token&lt;/code&gt;,&lt;code&gt;authorizer-access-token&lt;/code&gt; 和 &lt;code&gt;ticket&lt;/code&gt;，例如：其他业务系统需要微信的这两种 &lt;code&gt;token&lt;/code&gt; 或者 &lt;code&gt;ticket&lt;/code&gt;，就可以通过内部服务免云管家的接口 &lt;code&gt;auth&lt;/code&gt; 调用。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;4
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# 下面三个是对应的三个接口，都是 GET&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;http://localhost:8091/inner/component-access-token
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;http://localhost:8091/inner/authorizer-access-token?appid&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;wx88324f5750ebxxxx
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;http://localhost:8091/inner/ticket
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
 &lt;/div&gt;&lt;h2 id=&#34;常见问题&#34;&gt;常见问题&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;关于配置文件的问题，建议多读官方文档&lt;/strong&gt;&lt;/li&gt;

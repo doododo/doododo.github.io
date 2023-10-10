@@ -247,7 +247,7 @@
 
 
                 <time class="article-time--reading">
-                    阅读时长: 2 分钟
+                    阅读时长: 3 分钟
                 </time>
             </div>
         
@@ -322,6 +322,23 @@
 </span></span><span class="line"><span class="cl">│   └── dist
 </span></span><span class="line"><span class="cl">├── config.conf  <span class="c1"># 全局配置文件</span>
 </span></span><span class="line"><span class="cl">└── wx-open      <span class="c1"># Linux打包的可执行文件，需要打包其他平台留言</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><ul>
+<li>内网端口怎么用？内网服务，主要用于二次开发或者服务对接，内部服务包含获取 <code>component-access-token</code>,<code>authorizer-access-token</code> 和 <code>ticket</code>，例如：其他业务系统需要微信的这两种 <code>token</code> 或者 <code>ticket</code>，就可以通过内部服务免云管家的接口 <code>auth</code> 调用。</li>
+</ul>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="c1"># 下面三个是对应的三个接口，都是 GET</span>
+</span></span><span class="line"><span class="cl">http://localhost:8091/inner/component-access-token
+</span></span><span class="line"><span class="cl">http://localhost:8091/inner/authorizer-access-token?appid<span class="o">=</span>wx88324f5750ebxxxx
+</span></span><span class="line"><span class="cl">http://localhost:8091/inner/ticket
 </span></span></code></pre></td></tr></table>
 </div>
 </div><h2 id="常见问题">常见问题</h2>
