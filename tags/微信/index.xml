@@ -2,16 +2,16 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
         <title>微信 on 智慧与哲学</title>
-        <link>https://doodo.cn/tags/%E5%BE%AE%E4%BF%A1/</link>
+        <link>https://www.doodo.cn/tags/%E5%BE%AE%E4%BF%A1/</link>
         <description>Recent content in 微信 on 智慧与哲学</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
-        <lastBuildDate>Sun, 04 Jun 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://doodo.cn/tags/%E5%BE%AE%E4%BF%A1/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Sun, 04 Jun 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://www.doodo.cn/tags/%E5%BE%AE%E4%BF%A1/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>微信服务商微管家本地化部署</title>
-        <link>https://doodo.cn/p/golang-wx-open-wxcloudrun-wxcomponent/</link>
+        <link>https://www.doodo.cn/p/golang-wx-open-wxcloudrun-wxcomponent/</link>
         <pubDate>Sun, 04 Jun 2023 00:00:00 +0000</pubDate>
         
-        <guid>https://doodo.cn/p/golang-wx-open-wxcloudrun-wxcomponent/</guid>
+        <guid>https://www.doodo.cn/p/golang-wx-open-wxcloudrun-wxcomponent/</guid>
         <description>&lt;h2 id=&#34;功能介绍&#34;&gt;功能介绍&lt;/h2&gt;
 &lt;blockquote&gt;
 &lt;p&gt;官方提供的服务商微管家版本已满足大部分人使用，而且很适合学习和二次开发，抛砖引玉的告诉大家如何开始从三方平台接触微信开发、部署到云托管、二次开发其他应用等，具体功能参考官网的介绍。&lt;strong&gt;有能力的还是推荐使用官方的云托管&lt;/strong&gt;&lt;/p&gt;

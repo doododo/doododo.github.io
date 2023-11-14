@@ -2,33 +2,33 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
         <title>Categories on 智慧与哲学</title>
-        <link>https://doodo.cn/categories/</link>
+        <link>https://www.doodo.cn/categories/</link>
         <description>Recent content in Categories on 智慧与哲学</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
-        <lastBuildDate>Wed, 04 Oct 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://doodo.cn/categories/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Wed, 04 Oct 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://www.doodo.cn/categories/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>编程</title>
-        <link>https://doodo.cn/categories/code/</link>
+        <link>https://www.doodo.cn/categories/code/</link>
         <pubDate>Wed, 04 Oct 2023 00:00:00 +0000</pubDate>
         
-        <guid>https://doodo.cn/categories/code/</guid>
-        <description>&lt;img src="https://doodo.cn/categories/code/code.jpg" alt="Featured image of post 编程" /&gt;</description>
+        <guid>https://www.doodo.cn/categories/code/</guid>
+        <description>&lt;img src="https://www.doodo.cn/categories/code/code.jpg" alt="Featured image of post 编程" /&gt;</description>
         </item>
         <item>
         <title>思考</title>
-        <link>https://doodo.cn/categories/think/</link>
+        <link>https://www.doodo.cn/categories/think/</link>
         <pubDate>Tue, 29 Jun 2021 00:00:00 +0000</pubDate>
         
-        <guid>https://doodo.cn/categories/think/</guid>
-        <description>&lt;img src="https://doodo.cn/categories/think/think.png" alt="Featured image of post 思考" /&gt;</description>
+        <guid>https://www.doodo.cn/categories/think/</guid>
+        <description>&lt;img src="https://www.doodo.cn/categories/think/think.png" alt="Featured image of post 思考" /&gt;</description>
         </item>
         <item>
         <title>读书</title>
-        <link>https://doodo.cn/categories/reader/</link>
+        <link>https://www.doodo.cn/categories/reader/</link>
         <pubDate>Sat, 22 Feb 2020 00:00:00 +0000</pubDate>
         
-        <guid>https://doodo.cn/categories/reader/</guid>
-        <description>&lt;img src="https://doodo.cn/categories/reader/reader.png" alt="Featured image of post 读书" /&gt;</description>
+        <guid>https://www.doodo.cn/categories/reader/</guid>
+        <description>&lt;img src="https://www.doodo.cn/categories/reader/reader.png" alt="Featured image of post 读书" /&gt;</description>
         </item>
         
     </channel>
