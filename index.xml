@@ -8,12 +8,12 @@
         <language>zh-cn</language>
         <lastBuildDate>Sun, 04 Jun 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://doodo.cn/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>微信第三方平台API常见问题</title>
-        <link>https://doodo.cn/p/golang-wx-open-wxcloudrun-wxcomponent/</link>
+        <link>https://doodo.cn/p/weixin-open-api-ask/</link>
         <pubDate>Sun, 04 Jun 2023 00:00:00 +0000</pubDate>
         
-        <guid>https://doodo.cn/p/golang-wx-open-wxcloudrun-wxcomponent/</guid>
+        <guid>https://doodo.cn/p/weixin-open-api-ask/</guid>
         <description>&lt;blockquote&gt;
-&lt;p&gt;记录一些调试过程中遇到的一些常见问题&lt;/p&gt;
+&lt;p&gt;记录一些调试过程中遇到的一些常见问题，心学来潮会整理一手&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;ul&gt;
 &lt;li&gt;设置小程序名称，有时候没有返回 audit_id。&lt;a class=&#34;link&#34; href=&#34;https://developers.weixin.qq.com/doc/oplatform/openApi/OpenApiDoc/miniprogram-management/basic-info-management/setNickName.html#%E8%BF%94%E5%9B%9E%E6%95%B0%E6%8D%AE%E7%A4%BA%E4%BE%8B&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
