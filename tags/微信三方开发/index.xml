@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>微信三方开发 on 智慧与哲学</title>
+        <link>https://doodo.cn/tags/%E5%BE%AE%E4%BF%A1%E4%B8%89%E6%96%B9%E5%BC%80%E5%8F%91/</link>
+        <description>Recent content in 微信三方开发 on 智慧与哲学</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>zh-cn</language>
+        <lastBuildDate>Sun, 04 Jun 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://doodo.cn/tags/%E5%BE%AE%E4%BF%A1%E4%B8%89%E6%96%B9%E5%BC%80%E5%8F%91/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>微信第三方平台API常见问题</title>
+        <link>https://doodo.cn/p/golang-wx-open-wxcloudrun-wxcomponent/</link>
+        <pubDate>Sun, 04 Jun 2023 00:00:00 +0000</pubDate>
+        
+        <guid>https://doodo.cn/p/golang-wx-open-wxcloudrun-wxcomponent/</guid>
+        <description>&lt;blockquote&gt;
+&lt;p&gt;记录一些调试过程中遇到的一些常见问题&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;设置小程序名称，有时候没有返回 audit_id。&lt;a class=&#34;link&#34; href=&#34;https://developers.weixin.qq.com/doc/oplatform/openApi/OpenApiDoc/miniprogram-management/basic-info-management/setNickName.html#%E8%BF%94%E5%9B%9E%E6%95%B0%E6%8D%AE%E7%A4%BA%E4%BE%8B&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;『若接口未返回 audit_id，说明名称已直接设置成功，无需审核』&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        </item>
+        
+    </channel>
+</rss>

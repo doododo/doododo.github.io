@@ -2,16 +2,31 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
         <title>编程 on 智慧与哲学</title>
-        <link>https://doododo.github.io/categories/code/</link>
+        <link>https://doodo.cn/categories/code/</link>
         <description>Recent content in 编程 on 智慧与哲学</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
-        <lastBuildDate>Sun, 04 Jun 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://doododo.github.io/categories/code/index.xml" rel="self" type="application/rss+xml" /><item>
-        <title>微信服务商微管家本地化部署</title>
-        <link>https://doododo.github.io/p/golang-wx-open-wxcloudrun-wxcomponent/</link>
+        <lastBuildDate>Sun, 04 Jun 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://doodo.cn/categories/code/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>微信第三方平台API常见问题</title>
+        <link>https://doodo.cn/p/golang-wx-open-wxcloudrun-wxcomponent/</link>
         <pubDate>Sun, 04 Jun 2023 00:00:00 +0000</pubDate>
         
-        <guid>https://doododo.github.io/p/golang-wx-open-wxcloudrun-wxcomponent/</guid>
+        <guid>https://doodo.cn/p/golang-wx-open-wxcloudrun-wxcomponent/</guid>
+        <description>&lt;blockquote&gt;
+&lt;p&gt;记录一些调试过程中遇到的一些常见问题&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;设置小程序名称，有时候没有返回 audit_id。&lt;a class=&#34;link&#34; href=&#34;https://developers.weixin.qq.com/doc/oplatform/openApi/OpenApiDoc/miniprogram-management/basic-info-management/setNickName.html#%E8%BF%94%E5%9B%9E%E6%95%B0%E6%8D%AE%E7%A4%BA%E4%BE%8B&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;『若接口未返回 audit_id，说明名称已直接设置成功，无需审核』&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        </item>
+        <item>
+        <title>微信服务商微管家本地化部署</title>
+        <link>https://doodo.cn/p/golang-wx-open-wxcloudrun-wxcomponent/</link>
+        <pubDate>Sun, 04 Jun 2023 00:00:00 +0000</pubDate>
+        
+        <guid>https://doodo.cn/p/golang-wx-open-wxcloudrun-wxcomponent/</guid>
         <description>&lt;h2 id=&#34;功能介绍&#34;&gt;功能介绍&lt;/h2&gt;
 &lt;blockquote&gt;
 &lt;p&gt;官方提供的服务商微管家版本已满足大部分人使用，而且很适合学习和二次开发，抛砖引玉的告诉大家如何开始从三方平台接触微信开发、部署到云托管、二次开发其他应用等，具体功能参考官网的介绍。&lt;strong&gt;有能力的还是推荐使用官方的云托管&lt;/strong&gt;&lt;/p&gt;
@@ -203,10 +218,10 @@
         </item>
         <item>
         <title>Go 开发过程中解决MySQL(N&#43;1)查询</title>
-        <link>https://doododo.github.io/p/golang-mysql-query/</link>
+        <link>https://doodo.cn/p/golang-mysql-query/</link>
         <pubDate>Mon, 15 May 2023 00:00:00 +0000</pubDate>
         
-        <guid>https://doododo.github.io/p/golang-mysql-query/</guid>
+        <guid>https://doodo.cn/p/golang-mysql-query/</guid>
         <description>&lt;blockquote&gt;
 &lt;p&gt;在日常开发中，我们经常需要处理列表中每条数据附带另一个列表的情况。例如，在一个&lt;code&gt;OKR&lt;/code&gt;的列表中需要把每个&lt;code&gt;Object&lt;/code&gt;的下的 &lt;code&gt;Key Result&lt;/code&gt;也要展示出来。如果列表每页展示10个 &lt;code&gt;OKR&lt;/code&gt;，处理每个 &lt;code&gt;O&lt;/code&gt; 的时候，我们都进行一次 &lt;code&gt;KR&lt;/code&gt; 的查询，那就是我们标题里的 &lt;code&gt;N+1&lt;/code&gt; 查询问题。如果，我们一次性把列表中 &lt;code&gt;O&lt;/code&gt; 用到的 &lt;code&gt;KR&lt;/code&gt;都查出来，循环 &lt;code&gt;O&lt;/code&gt; 的时候，在过滤出当前 &lt;code&gt;O&lt;/code&gt; 的 &lt;code&gt;KR&lt;/code&gt;，那就是我下面要写的方案。&lt;/p&gt;
 &lt;/blockquote&gt;
@@ -454,10 +469,10 @@
         </item>
         <item>
         <title>Golang-01-基础</title>
-        <link>https://doododo.github.io/p/golang-01/</link>
+        <link>https://doodo.cn/p/golang-01/</link>
         <pubDate>Tue, 29 Dec 2020 00:00:00 +0000</pubDate>
         
-        <guid>https://doododo.github.io/p/golang-01/</guid>
+        <guid>https://doodo.cn/p/golang-01/</guid>
         <description>&lt;h3 id=&#34;数组赋值问题&#34;&gt;数组赋值问题&lt;/h3&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
@@ -655,10 +670,10 @@
         </item>
         <item>
         <title>Tencent AI OCR</title>
-        <link>https://doododo.github.io/p/composer-tencent-ai-ocr/</link>
+        <link>https://doodo.cn/p/composer-tencent-ai-ocr/</link>
         <pubDate>Sat, 07 Dec 2019 00:00:00 +0000</pubDate>
         
-        <guid>https://doododo.github.io/p/composer-tencent-ai-ocr/</guid>
+        <guid>https://doodo.cn/p/composer-tencent-ai-ocr/</guid>
         <description>&lt;h2 id=&#34;支持&#34;&gt;支持&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;#id-card&#34; &gt;身份证识别&lt;/a&gt;&lt;/li&gt;
