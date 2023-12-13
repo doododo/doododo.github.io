@@ -1,0 +1,721 @@
+<!DOCTYPE html>
+<html lang="zh-cn" dir="ltr">
+    <head><meta charset='utf-8'>
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content='仅记录自己入门 RabbitMQ 学习过程。'>
+<title>RabbitMQ入门笔记</title>
+
+<link rel='canonical' href='https://blog.11010.net/p/rabbitmq-01/'>
+
+<link rel="stylesheet" href="/scss/style.min.69da10515745569918e54b01947afe2b5ca1aef2b2665febbd3a278ad918b489.css"><meta property='og:title' content='RabbitMQ入门笔记'>
+<meta property='og:description' content='仅记录自己入门 RabbitMQ 学习过程。'>
+<meta property='og:url' content='https://blog.11010.net/p/rabbitmq-01/'>
+<meta property='og:site_name' content='智慧与哲学'>
+<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='学习' /><meta property='article:tag' content='编程' /><meta property='article:published_time' content='2019-12-29T00:00:00&#43;00:00'/><meta property='article:modified_time' content='2019-12-29T00:00:00&#43;00:00'/>
+<meta name="twitter:title" content="RabbitMQ入门笔记">
+<meta name="twitter:description" content="仅记录自己入门 RabbitMQ 学习过程。">
+    <link rel="shortcut icon" href="/favicon.ico" />
+
+    </head>
+    <body class="
+    article-page
+    ">
+    <script>
+        (function() {
+            const colorSchemeKey = 'StackColorScheme';
+            if(!localStorage.getItem(colorSchemeKey)){
+                localStorage.setItem(colorSchemeKey, "auto");
+            }
+        })();
+    </script><script>
+    (function() {
+        const colorSchemeKey = 'StackColorScheme';
+        const colorSchemeItem = localStorage.getItem(colorSchemeKey);
+        const supportDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches === true;
+
+        if (colorSchemeItem == 'dark' || colorSchemeItem === 'auto' && supportDarkMode) {
+            
+
+            document.documentElement.dataset.scheme = 'dark';
+        } else {
+            document.documentElement.dataset.scheme = 'light';
+        }
+    })();
+</script>
+<div class="container main-container flex on-phone--column compact"><aside class="sidebar left-sidebar sticky ">
+    <button class="hamburger hamburger--spin" type="button" id="toggle-menu" aria-label="切换菜单">
+        <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+        </span>
+    </button>
+
+    <header>
+        
+            
+            <figure class="site-avatar">
+                <a href="/">
+                
+                    
+                    
+                    
+                        
+                        <img src="/img/avatar_huf8064a1b7505131f9489a77ea77d0422_68951_300x0_resize_box_3.png" width="300"
+                            height="401" class="site-logo" loading="lazy" alt="Avatar">
+                    
+                
+                </a>
+                
+                    <span class="emoji">🪐</span>
+                
+            </figure>
+            
+        
+        
+        <div class="site-meta">
+            <h1 class="site-name"><a href="/">智慧与哲学</a></h1>
+            <h2 class="site-description">When you look into the abyss, the abyss also looks into you.</h2>
+        </div>
+    </header><ol class="menu" id="main-menu">
+        
+        
+        
+        <li >
+            <a href='/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-home" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <polyline points="5 12 3 12 12 3 21 12 19 12" />
+  <path d="M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-7" />
+  <path d="M9 21v-6a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v6" />
+</svg>
+
+
+
+                
+                <span>首页</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/archives/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-archive" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <rect x="3" y="4" width="18" height="4" rx="2" />
+  <path d="M5 8v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-10" />
+  <line x1="10" y1="12" x2="14" y2="12" />
+</svg>
+
+
+
+                
+                <span>归档</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/about-me/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-user" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="7" r="4" />
+  <path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" />
+</svg>
+
+
+
+                
+                <span>关于</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/search/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-search" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="10" cy="10" r="7" />
+  <line x1="21" y1="21" x2="15" y2="15" />
+</svg>
+
+
+
+                
+                <span>搜索</span>
+            </a>
+        </li>
+        
+
+        <div class="menu-bottom-section">
+            
+            
+                <li id="dark-mode-toggle">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-left" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="8" cy="12" r="2" />
+  <rect x="2" y="6" width="20" height="12" rx="6" />
+</svg>
+
+
+
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-right" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="16" cy="12" r="2" />
+  <rect x="2" y="6" width="20" height="12" rx="6" />
+</svg>
+
+
+
+                    <span>暗色模式</span>
+                </li>
+            
+        </div>
+    </ol>
+</aside>
+
+    
+
+            <main class="main full-width">
+    <article class="main-article">
+    <header class="article-header">
+
+    <div class="article-details">
+    
+    <header class="article-category">
+        
+            <a href="/categories/code/" style="background-color: #2a9d8f; color: #fff;">
+                编程
+            </a>
+        
+    </header>
+    
+
+    <div class="article-title-wrapper">
+        <h2 class="article-title">
+            <a href="/p/rabbitmq-01/">RabbitMQ入门笔记</a>
+        </h2>
+    
+        
+        <h3 class="article-subtitle">
+            仅记录自己入门 RabbitMQ 学习过程。
+        </h3>
+        
+    </div>
+
+    
+    
+    
+    
+    <footer class="article-time">
+        
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-calendar-time" width="56" height="56" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <path d="M11.795 21h-6.795a2 2 0 0 1 -2 -2v-12a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v4" />
+  <circle cx="18" cy="18" r="4" />
+  <path d="M15 3v4" />
+  <path d="M7 3v4" />
+  <path d="M3 11h16" />
+  <path d="M18 16.496v1.504l1 1" />
+</svg>
+                <time class="article-time--published">Dec 29, 2019</time>
+            </div>
+        
+
+        
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <polyline points="12 7 12 12 15 15" />
+</svg>
+
+
+
+                <time class="article-time--reading">
+                    阅读时长: 3 分钟
+                </time>
+            </div>
+        
+    </footer>
+    
+
+    
+</div>
+
+</header>
+
+    <section class="article-content">
+    
+    
+    <h3 id="安装">安装</h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span><span class="lnt">27
+</span><span class="lnt">28
+</span><span class="lnt">29
+</span><span class="lnt">30
+</span><span class="lnt">31
+</span><span class="lnt">32
+</span><span class="lnt">33
+</span><span class="lnt">34
+</span><span class="lnt">35
+</span><span class="lnt">36
+</span><span class="lnt">37
+</span><span class="lnt">38
+</span><span class="lnt">39
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl"><span class="c1"># 添加源</span>
+</span></span><span class="line"><span class="cl"><span class="nb">cd</span> /etc/yum.repos.d/
+</span></span><span class="line"><span class="cl">vi rabbitmq-erlang.repo
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="o">[</span>erlang-solutions<span class="o">]</span>
+</span></span><span class="line"><span class="cl"><span class="nv">name</span><span class="o">=</span>CentOS <span class="nv">$releasever</span> - <span class="nv">$basearch</span> - Erlang Solutions
+</span></span><span class="line"><span class="cl"><span class="nv">baseurl</span><span class="o">=</span>https://packages.erlang-solutions.com/rpm/centos/<span class="nv">$releasever</span>/<span class="nv">$basearch</span>
+</span></span><span class="line"><span class="cl"><span class="nv">gpgcheck</span><span class="o">=</span><span class="m">1</span>
+</span></span><span class="line"><span class="cl"><span class="nv">gpgkey</span><span class="o">=</span>https://packages.erlang-solutions.com/rpm/erlang_solutions.asc
+</span></span><span class="line"><span class="cl"><span class="nv">enabled</span><span class="o">=</span><span class="m">1</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">:wq <span class="c1"># 保存退出</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># 开始安装 erlang</span>
+</span></span><span class="line"><span class="cl">yum install -y erlang esl-erlang
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># 安装完成后，检查安装结果</span>
+</span></span><span class="line"><span class="cl">erl --version
+</span></span><span class="line"><span class="cl"><span class="c1">### 显示结果，说明erlang安装成功 start ###</span>
+</span></span><span class="line"><span class="cl">Erlang/OTP <span class="m">24</span> <span class="o">[</span>erts-12.1.5<span class="o">]</span> <span class="o">[</span>source<span class="o">]</span> <span class="o">[</span>64-bit<span class="o">]</span> <span class="o">[</span>smp:2:2<span class="o">]</span> <span class="o">[</span>ds:2:2:10<span class="o">]</span> <span class="o">[</span>async-threads:1<span class="o">]</span> <span class="o">[</span>jit<span class="o">]</span>
+</span></span><span class="line"><span class="cl">Eshell V12.1.5
+</span></span><span class="line"><span class="cl"><span class="c1">### 显示结果 end ###</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># 开始安装 RabbitMQ 参考官网即可 https://www.rabbitmq.com/install-rpm.html#downloads</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># 我下载的 rpm 包：rabbitmq-server-3.10.5-1.el8.noarch.rpm</span>
+</span></span><span class="line"><span class="cl">yum install -y rabbitmq-server-3.10.5-1.el8.noarch.rpm
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">## 安装完毕，启动 RabbitMQ</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># 启用RabbitMQ的web管理界面。</span>
+</span></span><span class="line"><span class="cl">rabbitmq-plugins <span class="nb">enable</span> rabbitmq_management
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># 添加新用户</span>
+</span></span><span class="line"><span class="cl">rabbitmqctl add_user myuser 9eBTmok7Z^
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># 设置用户为管理员</span>
+</span></span><span class="line"><span class="cl">rabbitmqctl set_user_tags myuser administrator
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># 可以登陆 web 端进行管理了 http://xxx.xxx.xx.xx:15672 用户名:myuser 密码:9eBTmok7Z^</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h3 id="常用命令">常用命令</h3>
+<ul>
+<li>
+<p>启动：<code>service rabbitmq-server stop</code></p>
+</li>
+<li>
+<p>查看状态：<code>service rabbitmq-server start</code></p>
+</li>
+<li>
+<p>暂停：<code>service rabbitmq-server stop</code></p>
+</li>
+<li>
+<p>检查本地节点是否正在运行以及 CLI 工具是否可以成功对其进行身份验证 <code>rabbitmq-diagnostics ping</code></p>
+</li>
+<li>
+<p>打印启用的组件（应用程序）、TCP 侦听器、内存使用故障、警报 <code>rabbitmq-diagnostics status</code></p>
+</li>
+<li>
+<p>打印集群成员资格信息 <code>rabbitmq-diagnostics cluster_status</code></p>
+</li>
+<li>
+<p>打印有效节点配置 <code>rabbitmq-diagnostics environment</code></p>
+</li>
+</ul>
+<h3 id="authentication-认证">Authentication 认证</h3>
+<ul>
+<li>默认授权用户 <code>username=guest, password=guest, virtualhost=/</code>， 这个用户只能本机登陆，不能通过 <code>ip+port</code> 远程登陆。</li>
+</ul>
+<blockquote>
+<p>官方：强烈不建议允许默认的用户可远程登陆 MQ，用过 RabbitMQ 的程序员都知道默认用户名和密码是啥，这会让你的系统的安全性大大降低！推荐的做法是：删除默认用户、使用新的安全凭证创建新的用户</p>
+</blockquote>
+<h3 id="用户管理">用户管理</h3>
+<blockquote>
+<p>通过 web 控制台管理很方便</p>
+</blockquote>
+<ul>
+<li>查看有哪些用户 <code>rabbitmqctl list_users --formatter=json</code></li>
+</ul>
+<h3 id="概念">概念</h3>
+<ul>
+<li><code>virtual host</code>：<code>virtual host</code> 可以绑定多个业务线</li>
+<li><code>Exchange</code> 「交换机」是出现再订阅模型中的词，不同的订阅模型本质上就是根据订阅交换机的类型区分的</li>
+<li><code>Fanout</code> 「广播模型」是将消息发送给绑定给交换机的所有队列(因为他们使用的是同一个 <code>RoutingKey</code>)。这个模型的特点就是它在发送消息的时候,并没有指明 Rounting Key , 或者说他指定了 Routing Key,但是所有的消费者都知道,大家都能接收到消息,就像听广播</li>
+<li><code>Direct</code> 「定向」是将消息发送给制定的 <code>RoutingKey</code>（路由键） 的队列。生产者向交换机发送消息时，会指定一个 <code>RoutingKey</code>，消费者 C1 可以指定消费 <code>RoutingKey</code> 为 error 的消息，消费者 C2/C3/C4 可以指定消费 <code>RoutingKey</code> 为 info/error/warning 的消息</li>
+<li><code>Topic</code> 「通配符」是将消息发送给符合 <code>Routing Patten</code>（路由模式）的队列。类似 <code>Direct</code> 模式，就是 <code>RoutingKey</code> 可以支持通配符。</li>
+</ul>
+<blockquote>
+<p>Broker，</p>
+</blockquote>
+<h3 id="消息模型">消息模型</h3>
+<blockquote>
+<p>关于 RabbitMQ 的五种消息模型，可以参考<a class="link" href="https://juejin.cn/post/7001401714641207327"  target="_blank" rel="noopener"
+    >这里</a></p>
+</blockquote>
+<h3 id="消息确认机制">消息确认机制</h3>
+<p><img src="/p/rabbitmq-01/mq-1.png"
+	width="601"
+	height="133"
+	srcset="/p/rabbitmq-01/mq-1_hu741d6649f9e210906663d1884f5e0072_19791_480x0_resize_box_3.png 480w, /p/rabbitmq-01/mq-1_hu741d6649f9e210906663d1884f5e0072_19791_1024x0_resize_box_3.png 1024w"
+	loading="lazy"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="451"
+		data-flex-basis="1084px"
+	
+></p>
+<ul>
+<li>ACK 确认机制，消费者收到消息后自动发送 ACK 给 RabbitMQ 就是自动 ACK，如果我们自己手动控制消费者收到并成功执行消息后发送 ACK 给 RabbitMQ 就是手动 ACK。</li>
+</ul>
+<blockquote>
+<p>eg.比如我们把所有飞书机器人需要发送的消息都丢到 RabbitMQ，先创建一个名为 <code>feishu</code> 的 <code>virtual host</code>，声明一个名为 <code>feishu_message</code> 的 Exchange，当我们需要发送飞书卡片消息时，用 RabbitMQ 生产者通过 <code>Direct</code> 定向把消息发送给 <code>fs_card</code> 的路由键队列，把其他消息发送到 <code>fs_msg</code> 的路由键队列，这样我们可以用消费者 C1 处理发送所有的卡片消息，消费者 C2 处理发送其他飞书消息。但是，当我们消费者 C1 发送飞书卡片的时候失败了，这个时候，我们就可以采用手动 ACK 确认机制。</p>
+</blockquote>
+<h3 id="web-控制台">Web 控制台</h3>
+<ul>
+<li><code>Overview</code>: 查看当前系统中消息的传输状态</li>
+<li><code>Connections</code>: 查看当前系统中创建的链接</li>
+<li><code>Channels</code>: 查看当前系统中创建的通道</li>
+<li><code>Exchanges</code>: 查看当前系统中创建的交换机</li>
+<li><code>Queues</code>: 查看当前系统中创建的消息队列</li>
+</ul>
+<h3 id="我们的应用场景">我们的应用场景</h3>
+<ul>
+<li>Key-Value 放入 Redis</li>
+<li>消息队列通过 machinery 包放入 RabbitMQ</li>
+</ul>
+
+</section>
+
+
+    <footer class="article-footer">
+    
+    <section class="article-tags">
+        
+            <a href="/tags/%E5%AD%A6%E4%B9%A0/">学习</a>
+        
+            <a href="/tags/%E7%BC%96%E7%A8%8B/">编程</a>
+        
+    </section>
+
+
+    
+    <section class="article-copyright">
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-copyright" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <path d="M14.5 9a3.5 4 0 1 0 0 6" />
+</svg>
+
+
+
+        <span>Licensed under CC BY-NC-SA 4.0</span>
+    </section>
+    </footer>
+
+
+    
+</article>
+
+    
+
+    
+
+<aside class="related-content--wrapper">
+    <h2 class="section-title">相关文章</h2>
+    <div class="related-content">
+        <div class="flex article-list--tile">
+            
+                
+<article class="">
+    <a href="/p/wx-open-coustom-frontend-page/">
+        
+        
+
+        <div class="article-details">
+            <h2 class="article-title">微信服务商微管家本地化部署二</h2>
+        </div>
+    </a>
+</article>
+
+            
+                
+<article class="">
+    <a href="/p/weixin-open-api-ask/">
+        
+        
+
+        <div class="article-details">
+            <h2 class="article-title">微信第三方平台API常见问题</h2>
+        </div>
+    </a>
+</article>
+
+            
+                
+<article class="">
+    <a href="/p/golang-wx-open-wxcloudrun-wxcomponent/">
+        
+        
+
+        <div class="article-details">
+            <h2 class="article-title">微信服务商微管家本地化部署</h2>
+        </div>
+    </a>
+</article>
+
+            
+                
+<article class="">
+    <a href="/p/golang-mysql-query/">
+        
+        
+
+        <div class="article-details">
+            <h2 class="article-title">Go 开发过程中解决MySQL(N&#43;1)查询</h2>
+        </div>
+    </a>
+</article>
+
+            
+                
+<article class="">
+    <a href="/p/golang-01/">
+        
+        
+
+        <div class="article-details">
+            <h2 class="article-title">Golang-01-基础</h2>
+        </div>
+    </a>
+</article>
+
+            
+        </div>
+    </div>
+</aside>
+
+     
+    
+        
+    <div id="cusdis_thread"
+    data-host="https://cusdis.com"
+    data-app-id="5812dc4a-026f-4b5b-b830-84f4616e2bd3"
+    data-page-id="c6c54e860c1d370b0183c7dc8dd8bb90"
+    data-page-url="https://blog.11010.net/p/rabbitmq-01/"
+    data-page-title="RabbitMQ入门笔记"></div>
+<script async defer src="https://cusdis.com/js/cusdis.es.js"></script>
+
+<script>
+    function setCusdisTheme(theme) {
+        let cusdis = document.querySelector('#cusdis_thread iframe');
+        if (cusdis) {
+            window.CUSDIS.setTheme(theme)
+        }
+    }
+
+    window.addEventListener('onColorSchemeChange', (e) => {
+        setCusdisTheme(e.detail)
+    })
+</script>
+
+
+    
+
+    <footer class="site-footer">
+    <section class="copyright">
+        &copy;
+        
+        2016 -
+        
+        2023 智慧与哲学
+    </section>
+
+    <section class="powerby">
+        
+        doodo <br />
+        Built with <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> <br />
+        主题 <b><a href="https://github.com/CaiJimmy/hugo-theme-stack" target="_blank" rel="noopener"
+                data-version="3.16.0">Stack</a></b> 由 <a href="https://jimmycai.com" target="_blank" rel="noopener">Jimmy</a> 设计
+
+        
+
+
+<script async src=" //busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js "></script>
+
+
+
+
+<section>
+    
+    <span id="busuanzi_container_value_site_pv"><i class="far fa-eye fa-fw">本站总访问量</i>
+        
+        <span id="busuanzi_value_site_pv"></span>
+    </span>
+    
+
+    
+    &nbsp;|&nbsp;
+    
+
+    
+    <span id="busuanzi_container_value_site_uv"><i class="fa fa-user">本站访客数</i>
+        
+        <span id="busuanzi_value_site_uv"></span>
+    </span>
+    
+</section>
+
+
+
+
+
+
+</section>
+</footer>
+
+
+    
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    
+    <div class="pswp__bg"></div>
+
+    
+    <div class="pswp__scroll-wrap">
+
+        
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        
+        <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar">
+
+                
+
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                
+                
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                        <div class="pswp__preloader__cut">
+                            <div class="pswp__preloader__donut"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div>
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.js"integrity="sha256-ePwmChbbvXbsO02lbM3HoHbSHTHFAeChekF1xKJdleo="crossorigin="anonymous"
+                defer
+                >
+            </script><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe-ui-default.min.js"integrity="sha256-UKkzOn/w1mBxRmLLGrSeyB4e1xbrp4xylgAWb3M42pU="crossorigin="anonymous"
+                defer
+                >
+            </script><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/default-skin/default-skin.min.css"crossorigin="anonymous"
+            ><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.css"crossorigin="anonymous"
+            >
+
+            </main>
+        </div>
+        <script 
+                src="https://cdn.jsdelivr.net/npm/node-vibrant@3.1.6/dist/vibrant.min.js"integrity="sha256-awcR2jno4kI5X0zL8ex0vi2z&#43;KMkF24hUW8WePSA9HM="crossorigin="anonymous"
+                
+                >
+            </script><script type="text/javascript" src="/ts/main.js" defer></script>
+<script>
+    (function () {
+        const customFont = document.createElement('link');
+        customFont.href = "https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap";
+
+        customFont.type = "text/css";
+        customFont.rel = "stylesheet";
+
+        document.head.appendChild(customFont);
+    }());
+</script>
+
+    </body>
+</html>

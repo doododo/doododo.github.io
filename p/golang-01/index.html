@@ -6,7 +6,7 @@
 
 <link rel='canonical' href='https://blog.11010.net/p/golang-01/'>
 
-<link rel="stylesheet" href="/scss/style.min.60d59fc5866170c16b6dfc79276d9f9666ffc30c86802395367f73f246c6211b.css"><meta property='og:title' content='Golang-01-基础'>
+<link rel="stylesheet" href="/scss/style.min.69da10515745569918e54b01947afe2b5ca1aef2b2665febbd3a278ad918b489.css"><meta property='og:title' content='Golang-01-基础'>
 <meta property='og:description' content='仅记录 Golang 学习过程中一些容易记错的地方。'>
 <meta property='og:url' content='https://blog.11010.net/p/golang-01/'>
 <meta property='og:site_name' content='智慧与哲学'>
@@ -78,7 +78,6 @@
         
         
         
-
         <li >
             <a href='/' >
                 
@@ -99,7 +98,6 @@
         </li>
         
         
-
         <li >
             <a href='/archives/' >
                 
@@ -120,7 +118,6 @@
         </li>
         
         
-
         <li >
             <a href='/about-me/' >
                 
@@ -140,7 +137,6 @@
         </li>
         
         
-
         <li >
             <a href='/search/' >
                 
@@ -363,7 +359,7 @@
 <li>重复 close 会 panic。</li>
 <li>只读的 chan 不能 close。</li>
 </ul>
-<h2 id="关于-defer">关于 defer</h2>
+<h3 id="关于-defer">关于 defer</h3>
 <ul>
 <li>当os.Exit()方法退出程序时，defer不会被执行。</li>
 <li>defer 只对当前协程有效。</li>
@@ -455,7 +451,29 @@
 </span></span></span><span class="line"><span class="cl"><span class="c1">// 带参数的： 3
 </span></span></span></code></pre></td></tr></table>
 </div>
-</div>
+</div><h3 id="关于-write-和-reader-的理解">关于 Write 和 Reader 的理解</h3>
+<blockquote>
+<p>io.Write 规则：</p>
+</blockquote>
+<ol>
+<li>向底层数据写入 len(p) 字节的切片 p</li>
+<li>返回被写入的字节数 n</li>
+<li>如果 n &lt; len(p)，则必须返回非 nil 的 err</li>
+<li>如果中途出现错误，必须返回非 nil 的 err</li>
+<li>切片 p 不允许修改</li>
+</ol>
+<blockquote>
+<p>io.Reader 规则：</p>
+</blockquote>
+<ol>
+<li>最多读取 len(p) 字节的数据</li>
+<li>返回读取的字节数以及任何发送的错误信息</li>
+<li>当 n &lt; len(p) 表示读取的数据不足以填满p，此时会立刻返回</li>
+<li>读取遇到错误，会返回读取到的字节数n，以及相应的err</li>
+<li>底层输入流结束时，方法会返回字节数n，但 err 可能是 EOF，也可能是nil，再次调用 read 方法的时候，肯定会返回 n = 0, err = EOF</li>
+<li>如果 n &gt; 0，优先处理读入的数据，再处理 err</li>
+</ol>
+
 </section>
 
 
@@ -499,6 +517,19 @@
             
                 
 <article class="">
+    <a href="/p/wx-open-coustom-frontend-page/">
+        
+        
+
+        <div class="article-details">
+            <h2 class="article-title">微信服务商微管家本地化部署二</h2>
+        </div>
+    </a>
+</article>
+
+            
+                
+<article class="">
     <a href="/p/weixin-open-api-ask/">
         
         
@@ -538,12 +569,12 @@
             
                 
 <article class="">
-    <a href="/p/composer-tencent-ai-ocr/">
+    <a href="/p/rabbitmq-01/">
         
         
 
         <div class="article-details">
-            <h2 class="article-title">Tencent AI OCR</h2>
+            <h2 class="article-title">RabbitMQ入门笔记</h2>
         </div>
     </a>
 </article>
