@@ -20,7 +20,7 @@
     &gt;Github-wx-open-frontend&lt;/a&gt;&lt;/p&gt;
 &lt;h3 id=&#34;使用方法&#34;&gt;使用方法&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;修改 &lt;code&gt;config.toml&lt;/code&gt;，新增 &lt;code&gt;IS_API=true&lt;/code&gt;，否则会启动失败&lt;/li&gt;
+&lt;li&gt;下载最新 &lt;code&gt;wx-open&lt;/code&gt; API，修改 &lt;code&gt;config.toml&lt;/code&gt;，新增 &lt;code&gt;IS_API=true&lt;/code&gt;，否则会启动失败&lt;/li&gt;
 &lt;li&gt;修改前端文件后，打包发布即可，无需重启接口服务&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h3 id=&#34;nginx参考&#34;&gt;Nginx参考&lt;/h3&gt;
@@ -76,7 +76,9 @@
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;o&#34;&gt;}&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;h3 id=&#34;heading&#34;&gt;&lt;/h3&gt;
+&lt;/div&gt;&lt;blockquote&gt;
+&lt;p&gt;TODO::偶尔会加新的三方接口，相关文档后续补充&lt;/p&gt;
+&lt;/blockquote&gt;
 </description>
         </item>
         <item>
@@ -89,8 +91,13 @@
 &lt;p&gt;记录一些调试过程中遇到的一些常见问题，心血来潮会整理一手&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;ul&gt;
-&lt;li&gt;设置小程序名称，有时候没有返回 audit_id。&lt;a class=&#34;link&#34; href=&#34;https://developers.weixin.qq.com/doc/oplatform/openApi/OpenApiDoc/miniprogram-management/basic-info-management/setNickName.html#%E8%BF%94%E5%9B%9E%E6%95%B0%E6%8D%AE%E7%A4%BA%E4%BE%8B&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;『若接口未返回 audit_id，说明名称已直接设置成功，无需审核』&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;设置小程序名称，有时候没有返回 audit_id。&lt;a class=&#34;link&#34; href=&#34;https://developers.weixin.qq.com/doc/oplatform/openApi/OpenApiDoc/miniprogram-management/basic-info-management/setNickName.html#%E8%BF%94%E5%9B%9E%E6%95%B0%E6%8D%AE%E7%A4%BA%E4%BE%8B&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;『若接口未返回 audit_id，说明名称已直接设置成功，无需审核』&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;微管家项目的用户名和密码在第一次启动后的日志匹配 GetUser 关键词。&lt;/p&gt;
+&lt;/li&gt;
 &lt;/ul&gt;
 </description>
         </item>

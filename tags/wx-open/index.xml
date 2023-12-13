@@ -20,7 +20,7 @@
     &gt;Github-wx-open-frontend&lt;/a&gt;&lt;/p&gt;
 &lt;h3 id=&#34;使用方法&#34;&gt;使用方法&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;修改 &lt;code&gt;config.toml&lt;/code&gt;，新增 &lt;code&gt;IS_API=true&lt;/code&gt;，否则会启动失败&lt;/li&gt;
+&lt;li&gt;下载最新 &lt;code&gt;wx-open&lt;/code&gt; API，修改 &lt;code&gt;config.toml&lt;/code&gt;，新增 &lt;code&gt;IS_API=true&lt;/code&gt;，否则会启动失败&lt;/li&gt;
 &lt;li&gt;修改前端文件后，打包发布即可，无需重启接口服务&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h3 id=&#34;nginx参考&#34;&gt;Nginx参考&lt;/h3&gt;
@@ -76,7 +76,9 @@
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;o&#34;&gt;}&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;h3 id=&#34;heading&#34;&gt;&lt;/h3&gt;
+&lt;/div&gt;&lt;blockquote&gt;
+&lt;p&gt;TODO::偶尔会加新的三方接口，相关文档后续补充&lt;/p&gt;
+&lt;/blockquote&gt;
 </description>
         </item>
         
