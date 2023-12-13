@@ -265,8 +265,11 @@
 <p><a class="link" href="https://github.com/doodolabs/wx-open-frontend"  target="_blank" rel="noopener"
     >Github-wx-open-frontend</a></p>
 <h3 id="使用方法">使用方法</h3>
+<blockquote>
+<p><code>config.toml</code> 的 <code>IS_API</code> 为 <code>true</code>，则 <code>NGINX</code> 配置需要调整成下面方式，此时前端项目发布不在需要重启 <code>API</code> 服务；如果为 <code>false</code>，则项目目录结构必须按照原来的结构（参考 <code>wx-open</code> 老版本），但 <code>client/dist</code> 目录可以替换成自己 <code>build</code> 后的文件。</p>
+</blockquote>
 <ul>
-<li>下载最新 <code>wx-open</code> API，修改 <code>config.toml</code>，新增 <code>IS_API=true</code>，否则会启动失败</li>
+<li>下载最新 <code>wx-open-api.tar.gz</code> API，修改 <code>config.toml</code>，新增 <code>IS_API=true</code>，否则会启动失败</li>
 <li>修改前端文件后，打包发布即可，无需重启接口服务</li>
 </ul>
 <h3 id="nginx参考">Nginx参考</h3>

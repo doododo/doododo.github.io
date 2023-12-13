@@ -19,8 +19,11 @@
 &lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://github.com/doodolabs/wx-open-frontend&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;Github-wx-open-frontend&lt;/a&gt;&lt;/p&gt;
 &lt;h3 id=&#34;使用方法&#34;&gt;使用方法&lt;/h3&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;code&gt;config.toml&lt;/code&gt; 的 &lt;code&gt;IS_API&lt;/code&gt; 为 &lt;code&gt;true&lt;/code&gt;，则 &lt;code&gt;NGINX&lt;/code&gt; 配置需要调整成下面方式，此时前端项目发布不在需要重启 &lt;code&gt;API&lt;/code&gt; 服务；如果为 &lt;code&gt;false&lt;/code&gt;，则项目目录结构必须按照原来的结构（参考 &lt;code&gt;wx-open&lt;/code&gt; 老版本），但 &lt;code&gt;client/dist&lt;/code&gt; 目录可以替换成自己 &lt;code&gt;build&lt;/code&gt; 后的文件。&lt;/p&gt;
+&lt;/blockquote&gt;
 &lt;ul&gt;
-&lt;li&gt;下载最新 &lt;code&gt;wx-open&lt;/code&gt; API，修改 &lt;code&gt;config.toml&lt;/code&gt;，新增 &lt;code&gt;IS_API=true&lt;/code&gt;，否则会启动失败&lt;/li&gt;
+&lt;li&gt;下载最新 &lt;code&gt;wx-open-api.tar.gz&lt;/code&gt; API，修改 &lt;code&gt;config.toml&lt;/code&gt;，新增 &lt;code&gt;IS_API=true&lt;/code&gt;，否则会启动失败&lt;/li&gt;
 &lt;li&gt;修改前端文件后，打包发布即可，无需重启接口服务&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h3 id=&#34;nginx参考&#34;&gt;Nginx参考&lt;/h3&gt;
