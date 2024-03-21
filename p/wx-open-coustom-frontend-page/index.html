@@ -247,7 +247,7 @@
 
 
                 <time class="article-time--reading">
-                    阅读时长: 1 分钟
+                    阅读时长: 2 分钟
                 </time>
             </div>
         
@@ -329,8 +329,26 @@
 </span></span><span class="line"><span class="cl"><span class="o">}</span>
 </span></span></code></pre></td></tr></table>
 </div>
-</div><blockquote>
-<p>TODO::偶尔会加新的三方接口，相关文档后续补充</p>
+</div><h3 id="二次开发思路">二次开发思路</h3>
+<ul>
+<li>首先要把上面的 Go的Api(后面统称wx-open-client)部署好，主要是让微信平台 <code>callback</code>，稳定提供最新的小程序token。比如配置的域名是 <code>wx-open.com</code></li>
+<li>本地用自己常用的开发语言（随便python/node/go/php/java） 起一个web服务（假设端口 <code>8668</code>），在 <code>nginx</code> 配置匹配到 <code>wx-open.com/api/python</code> 这个<code>uri</code>开头的服务都代理到 <code>8668</code></li>
+<li><strong>方案一</strong> 想用一套前端代码把所有三方平台的接口都接了
+<ul>
+<li>上面前端代码下载。<code>fork</code> 后，自己本地开发即可</li>
+<li>前端在本地用 <code>npm run dev</code> 就可以调试了</li>
+<li>连老接口用 <code>wx-open.com</code></li>
+<li>连自己新开发的接口用 <code>wx-open.com/api/python/xxxx</code></li>
+</ul>
+</li>
+<li><strong>方案二</strong> 不想维护官方的前端代码，自己其他的业务逻辑都写到别的前端项目。
+<ul>
+<li>新起一个前端项目，其他开发思路同方案一。优点：新项目可以随便用<code>Vue</code>、<code>React</code>以及其他UI组件库</li>
+</ul>
+</li>
+</ul>
+<blockquote>
+<p>TODO::有问题留言，尽量把问题描述清楚，如果问题解决了也可以把解决方案留言，方便其他小伙伴排查问题，相关文档后续补充</p>
 </blockquote>
 
 </section>

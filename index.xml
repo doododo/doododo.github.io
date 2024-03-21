@@ -171,8 +171,26 @@
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;o&#34;&gt;}&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;blockquote&gt;
-&lt;p&gt;TODO::偶尔会加新的三方接口，相关文档后续补充&lt;/p&gt;
+&lt;/div&gt;&lt;h3 id=&#34;二次开发思路&#34;&gt;二次开发思路&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;首先要把上面的 Go的Api(后面统称wx-open-client)部署好，主要是让微信平台 &lt;code&gt;callback&lt;/code&gt;，稳定提供最新的小程序token。比如配置的域名是 &lt;code&gt;wx-open.com&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;本地用自己常用的开发语言（随便python/node/go/php/java） 起一个web服务（假设端口 &lt;code&gt;8668&lt;/code&gt;），在 &lt;code&gt;nginx&lt;/code&gt; 配置匹配到 &lt;code&gt;wx-open.com/api/python&lt;/code&gt; 这个&lt;code&gt;uri&lt;/code&gt;开头的服务都代理到 &lt;code&gt;8668&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;方案一&lt;/strong&gt; 想用一套前端代码把所有三方平台的接口都接了
+&lt;ul&gt;
+&lt;li&gt;上面前端代码下载。&lt;code&gt;fork&lt;/code&gt; 后，自己本地开发即可&lt;/li&gt;
+&lt;li&gt;前端在本地用 &lt;code&gt;npm run dev&lt;/code&gt; 就可以调试了&lt;/li&gt;
+&lt;li&gt;连老接口用 &lt;code&gt;wx-open.com&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;连自己新开发的接口用 &lt;code&gt;wx-open.com/api/python/xxxx&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;方案二&lt;/strong&gt; 不想维护官方的前端代码，自己其他的业务逻辑都写到别的前端项目。
+&lt;ul&gt;
+&lt;li&gt;新起一个前端项目，其他开发思路同方案一。优点：新项目可以随便用&lt;code&gt;Vue&lt;/code&gt;、&lt;code&gt;React&lt;/code&gt;以及其他UI组件库&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;blockquote&gt;
+&lt;p&gt;TODO::有问题留言，尽量把问题描述清楚，如果问题解决了也可以把解决方案留言，方便其他小伙伴排查问题，相关文档后续补充&lt;/p&gt;
 &lt;/blockquote&gt;
 </description>
         </item>
@@ -187,11 +205,17 @@
 &lt;/blockquote&gt;
 &lt;ul&gt;
 &lt;li&gt;
+&lt;p&gt;出现各种奇奇怪怪的问题，八成都是配置问题，多看几遍文档&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
 &lt;p&gt;设置小程序名称，有时候没有返回 audit_id。&lt;a class=&#34;link&#34; href=&#34;https://developers.weixin.qq.com/doc/oplatform/openApi/OpenApiDoc/miniprogram-management/basic-info-management/setNickName.html#%E8%BF%94%E5%9B%9E%E6%95%B0%E6%8D%AE%E7%A4%BA%E4%BE%8B&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;『若接口未返回 audit_id，说明名称已直接设置成功，无需审核』&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;微管家项目的用户名和密码在第一次启动后的日志匹配 GetUser 关键词。&lt;/p&gt;
+&lt;p&gt;微管家项目的用户名和密码查看第一次启动后的日志，然后匹配 &lt;code&gt;GetUser&lt;/code&gt; 关键词&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;忘记密码，复制&lt;code&gt;14e1b600b1fd579f47433b88e8d85291&lt;/code&gt;替换掉自己数据库用户表的老密码，对应的密码是&lt;code&gt;123456&lt;/code&gt;。（登陆成功后记得改成自己想要的密码）&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
 </description>

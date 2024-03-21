@@ -79,8 +79,26 @@
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;o&#34;&gt;}&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;blockquote&gt;
-&lt;p&gt;TODO::偶尔会加新的三方接口，相关文档后续补充&lt;/p&gt;
+&lt;/div&gt;&lt;h3 id=&#34;二次开发思路&#34;&gt;二次开发思路&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;首先要把上面的 Go的Api(后面统称wx-open-client)部署好，主要是让微信平台 &lt;code&gt;callback&lt;/code&gt;，稳定提供最新的小程序token。比如配置的域名是 &lt;code&gt;wx-open.com&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;本地用自己常用的开发语言（随便python/node/go/php/java） 起一个web服务（假设端口 &lt;code&gt;8668&lt;/code&gt;），在 &lt;code&gt;nginx&lt;/code&gt; 配置匹配到 &lt;code&gt;wx-open.com/api/python&lt;/code&gt; 这个&lt;code&gt;uri&lt;/code&gt;开头的服务都代理到 &lt;code&gt;8668&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;方案一&lt;/strong&gt; 想用一套前端代码把所有三方平台的接口都接了
+&lt;ul&gt;
+&lt;li&gt;上面前端代码下载。&lt;code&gt;fork&lt;/code&gt; 后，自己本地开发即可&lt;/li&gt;
+&lt;li&gt;前端在本地用 &lt;code&gt;npm run dev&lt;/code&gt; 就可以调试了&lt;/li&gt;
+&lt;li&gt;连老接口用 &lt;code&gt;wx-open.com&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;连自己新开发的接口用 &lt;code&gt;wx-open.com/api/python/xxxx&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;方案二&lt;/strong&gt; 不想维护官方的前端代码，自己其他的业务逻辑都写到别的前端项目。
+&lt;ul&gt;
+&lt;li&gt;新起一个前端项目，其他开发思路同方案一。优点：新项目可以随便用&lt;code&gt;Vue&lt;/code&gt;、&lt;code&gt;React&lt;/code&gt;以及其他UI组件库&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;blockquote&gt;
+&lt;p&gt;TODO::有问题留言，尽量把问题描述清楚，如果问题解决了也可以把解决方案留言，方便其他小伙伴排查问题，相关文档后续补充&lt;/p&gt;
 &lt;/blockquote&gt;
 </description>
         </item>
