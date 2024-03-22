@@ -263,18 +263,20 @@
     
     
     <blockquote>
-<p>重申下 <code>wx-open</code> 的意义：仅作为官方开源版本的一种本地化部署方案。三方平台开放的接口越来越多，每个用户用到的接口和使用场景也不太相同，推荐的二次开发方式『利用项目提供的 <code>token</code> 接入其他三方接口』。前端单独部署原理是用 <code>NGINX</code> 把 <code>API</code> 相关路由的转发到接口，默认指向到前端打包文件。</p>
+<p>重申下 <code>wx-open</code> 的意义：仅作为官方开源版本的一种本地化部署方案。三方平台开放的接口越来越多，每个用户用到的接口和使用场景也不太相同，推荐的二次开发方式『利用<code>wx-open</code>项目提供的 <code>token</code> 接入其他三方接口』。前端单独部署原理是用 <code>NGINX</code> 把自己业务系统 <code>API</code> 相关路由的转发到其他端口。</p>
 </blockquote>
 <h3 id="前端源码">前端源码</h3>
+<blockquote>
+<p>如果想在一个系统中完成其他前端页面，可以下载下面这个版本</p>
+</blockquote>
 <p><a class="link" href="https://github.com/doodolabs/wx-open-frontend"  target="_blank" rel="noopener"
     >Github-wx-open-frontend</a></p>
 <h3 id="使用方法">使用方法</h3>
 <blockquote>
-<p><code>config.toml</code> 的 <code>IS_API</code> 为 <code>true</code>，则 <code>NGINX</code> 配置需要调整成下面方式，此时前端项目发布不在需要重启 <code>API</code> 服务；如果为 <code>false</code>，则项目目录结构必须按照原来的结构（参考 <code>wx-open</code> 老版本），但 <code>client/dist</code> 目录可以替换成自己 <code>build</code> 后的文件。</p>
+<p><code>config.toml</code> 的 <code>IS_API</code> 为 <code>true</code>，则 <code>NGINX</code> 配置需要调整成下面方式，此时前端项目发布不在需要重启 <code>API</code> 服务；如果为 <code>false</code>，则项目目录结构必须按照原来的结构（参考 <code>wx-open</code> 老版本），但 <code>client/dist</code> 目录可以替换成自己 <code>build</code> 后的文件。- 下载最新 <code>wx-open-api.tar.gz</code> API，修改 <code>config.toml</code>，新增 <code>IS_API=true</code>，否则会启动失败。</p>
 </blockquote>
 <ul>
-<li>下载最新 <code>wx-open-api.tar.gz</code> API，修改 <code>config.toml</code>，新增 <code>IS_API=true</code>，否则会启动失败</li>
-<li>修改前端文件后，打包发布即可，无需重启接口服务</li>
+<li>如果自己重新发布前端项目，自己只<code>build</code>前端代码即可，无需重启接口服务（强烈建议前后端分开部署，要么每次修改代码都得重启<code>wx-open</code>）</li>
 </ul>
 <h3 id="nginx参考">Nginx参考</h3>
 <div class="highlight"><div class="chroma">
@@ -304,7 +306,8 @@
 </span><span class="lnt">23
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">server <span class="o">{</span>
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">server <span class="o">{</span>
 </span></span><span class="line"><span class="cl">    listen <span class="m">443</span> ssl<span class="p">;</span>
 </span></span><span class="line"><span class="cl">    server_name wx-open.com<span class="p">;</span>
 </span></span><span class="line"><span class="cl">    root /www/wx-open/dist<span class="p">;</span>
@@ -317,7 +320,6 @@
 </span></span><span class="line"><span class="cl">    access_log /var/log/nginx/wx-open.access.log<span class="p">;</span>
 </span></span><span class="line"><span class="cl">    error_log /var/log/nginx/wx-open.error.log<span class="p">;</span>
 </span></span><span class="line"><span class="cl">    client_max_body_size 200m<span class="p">;</span>
-</span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl">    location ~ ^/<span class="o">(</span>wxcomponent<span class="p">|</span>wxcallback<span class="o">)</span>/ <span class="o">{</span>
 </span></span><span class="line"><span class="cl">        proxy_set_header  Host <span class="nv">$host</span><span class="p">;</span>
 </span></span><span class="line"><span class="cl">        proxy_set_header  X-Real-IP <span class="nv">$remote_addr</span><span class="p">;</span>
@@ -331,17 +333,31 @@
 </div>
 </div><h3 id="二次开发思路">二次开发思路</h3>
 <ul>
-<li>首先要把上面的 Go的Api(后面统称wx-open-client)部署好，主要是让微信平台 <code>callback</code>，稳定提供最新的小程序token。比如配置的域名是 <code>wx-open.com</code></li>
-<li>本地用自己常用的开发语言（随便python/node/go/php/java） 起一个web服务（假设端口 <code>8668</code>），在 <code>nginx</code> 配置匹配到 <code>wx-open.com/api/python</code> 这个<code>uri</code>开头的服务都代理到 <code>8668</code></li>
-<li><strong>方案一</strong> 想用一套前端代码把所有三方平台的接口都接了
+<li>
+<p>首先要把上面的 Go的Api(后面统称wx-open)部署好，主要是让微信平台 <code>callback</code>，稳定提供最新的小程序token。比如配置的域名是 <code>wx-open.com</code></p>
+</li>
+<li>
+<p>本地用自己常用的开发语言（随便python/node/go/php/java） 起一个web服务（假设端口 <code>8668</code>），在 <code>nginx</code> 配置匹配到 <code>wx-open.com/api/python</code> 这个<code>uri</code>开头的服务都代理到 <code>8668</code></p>
+</li>
+<li>
+<p><strong>方案一</strong> 想用一套前端代码把所有三方平台的接口都接了</p>
 <ul>
-<li>上面前端代码下载。<code>fork</code> 后，自己本地开发即可</li>
-<li>前端在本地用 <code>npm run dev</code> 就可以调试了</li>
-<li>连老接口用 <code>wx-open.com</code></li>
-<li>连自己新开发的接口用 <code>wx-open.com/api/python/xxxx</code></li>
+<li>
+<p>上面前端代码下载。<code>fork</code> 后，自己本地开发即可</p>
+</li>
+<li>
+<p>前端在本地用 <code>npm run dev</code> 就可以调试了</p>
+</li>
+<li>
+<p>连老接口用 <code>wx-open.com</code></p>
+</li>
+<li>
+<p>连自己新开发的接口用 <code>wx-open.com/api/python/xxxx</code></p>
+</li>
 </ul>
 </li>
-<li><strong>方案二</strong> 不想维护官方的前端代码，自己其他的业务逻辑都写到别的前端项目。
+<li>
+<p><strong>方案二</strong> 不想维护官方的前端代码，自己其他的业务逻辑都写到别的前端项目。</p>
 <ul>
 <li>新起一个前端项目，其他开发思路同方案一。优点：新项目可以随便用<code>Vue</code>、<code>React</code>以及其他UI组件库</li>
 </ul>
